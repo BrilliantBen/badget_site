@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #ede8e1;
+    font-size: 62.5%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+body.loaded input{
+    transition: background-color  0.5s;
+}
+
+#container{
+    width: 400px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+.form{
+    padding: 20px;
+    background-color: #fcfcfc;
+}
+
+#welcome{
+    padding: 15px 20px;
+    background-color: #2c4164;
+}
+
+#welcome p{
+    color: #fcfcfc;
+    font-size: 1.2em;
+}
+
+#welcome p em{
+    font-style: normal;
+    font-weight: bold;
+}
+
+#welcome p .logout{
+    float: right;
+}
+#welcome p .logout a{
+    color: #fcfcfc;
+    text-decoration: underline;
+}
+
+#welcome p .logout a:hover{
+    color: #9ab3dc;
+}
+
+#addTodo{
+    padding: 15px 20px;
+    background-color: #fcfcfc;
+    margin: 0 0 20px 0;
+}
+#addTodo h2{
+    font-size: 1.4em;
+    color: #2c4164;
+    margin: 0 0 15px 0;
+}
+
+fieldset{
+    border: 0;
+    margin: 0 0 20px 0;
+}
+
+fieldset legend{
+    display: none;
+}
+
+label{
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #aaaaaa;
+    display: block;
+}
+
+input[type="text"], input[type="password"]{
+    width: 340px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 1.2em;
+    color: #454545;
+    margin: 0 0 10px 0;
+}
+
+select{
+    width: 360px;
+    margin: 0 0 10px 0;
+    background: #f2f2f2;
+    padding: 10px 15px;
+    line-height: 1.2;
+    border: 0px solid #454545;
+    -webkit-appearance: none;
+}
+
+.cols-2 label{
+    display: inline-block;
+    width: 100px;
+}
+
+.cols-2 input[type="text"], .cols-2 input[type="password"]{
+    width: 235px;
+}
+
+input[type="submit"]{
+    border: 0;
+    width: 70px;
+    height: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: #fcfcfc;
+    font-size: 1em;
+    display: block;
+    background-color: #cfcfcf;
+    float: right;
+}
+
+input[type="submit"]:hover{
+    background-color: #4b6faa;
+    cursor: pointer;
+}
+
+#todoList p{
+    font-size: 1.2em;
+    color: #454545;
+    text-align: center;
+}
+
+#todoList h2{
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #afafaf;
+    margin: 0 0 20px 0;
+}
+
+#todoList li{
+    list-style: none;
+    color: #fcfcfc;
+    font-weight: normal;
+    font-size: 1.2em;
+    transition: opacity 0.5s;
+}
+
+#todoList li:hover{
+    opacity: 0.8;
+}
+
+.priority1, .priority2, .priority3{
+    padding: 20px;
+}
+
+.priority1{
+    background-color: #4b6faa;
+}
+
+.priority2{
+    background-color: #4276cc;
+    border-bottom: 1px solid #4b6faa;
+}
+
+.priority3  {
+    background-color: #357cf2;
+    border-bottom: 1px solid #4276cc;
+}
+
+.delete{
+    float: right;
+    text-decoration: underline;
+    color: #fcfcfc;
+}
+
+.alert {
+    margin-bottom: 1em;
+    padding: 15px 20px;
+    color: white;
+}
+
+.alert.alert-danger {
+    background-color: #C75760;
+}
+
+.alert.alert-success {
+    background-color: #57C760;
+}
+
+.error-message {
+    display: block;
+    color: #C75760;
+    margin-bottom: 2em;
+}
+
+.cols-2 .error-message {
+    margin-left: 105px;
+}
+
+.hidden {
+    display: none;
+}
+
+input.has-error {
+    background-color: #C75760;
+}
