@@ -1,12 +1,14 @@
 var gulp = require('gulp'),
 		browserify = require('browserify'),
 		buffer = require('gulp-buffer'),
+		compass = require('gulp-compass'),
 		gutil = require('gulp-util'),
 		jshint = require('gulp-jshint'),
 		source = require('vinyl-source-stream'),
 		sourcemaps = require('gulp-sourcemaps'),
 		stylish = require('jshint-stylish'),
-		uglify = require('gulp-uglify');
+		uglify = require('gulp-uglify'),
+		autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('lint', function(){
 	return gulp.src('js/src/**/*.js')
@@ -14,9 +16,9 @@ gulp.task('lint', function(){
 		.pipe(jshint.reporter(stylish));
 });
 
-gulp.task('scripts', function(){
+gulp.task('scripts', ['lint'], function(){
 	var bundler = browserify({
-		entries: ['./_js/app.js'],
+		entries: ['./js/src/init.js'],
 		debug: true
 	});
 
@@ -36,6 +38,33 @@ gulp.task('scripts', function(){
 		.pipe(gulp.dest('./js'));
 });
 
-gulp.task('watch', ['scripts'], function(){
-	gulp.watch(['_js/**/*.js','_hbs/**/*.hbs'], ['scripts']);
+gulp.task('styles', function(){
+	return gulp.src('./_scss/*.scss')
+		.pipe(compass({
+			config_file: './config.rb',
+			css: './css',
+			sass: '_scss',
+			environment: 'production'
+		}))
+
+
+		.on('error', function(err){
+			gutil.log(err.message);
+			gutil.beep();
+			this.emit('end');
+		})
+		.pipe(autoprefixer({
+        	browsers: ['last 2 versions'],
+            cascade: false
+        }))
+
+		.pipe(gulp.dest('./css'));
 });
+
+
+
+gulp.task('watch', ['scripts', 'styles'], function(){
+	gulp.watch(['js/src/**/*.js'], ['scripts']);
+	gulp.watch(['_scss/*.scss'], ['styles']);
+});
+

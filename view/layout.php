@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Todos</title>
-        <link href="css/screen.css" rel="stylesheet">
+ <meta charset="UTF-8">
+	<title>Love Live!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<link href="css/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/screen.css"/>
     </head>
     <body>
 
         <div id="container">
-            <?php if(!empty($_SESSION['info'])): ?><div class="alert alert-success"><?php echo $_SESSION['info'];?></div><?php endif; ?>
-            <?php if(!empty($_SESSION['error'])): ?><div class="alert alert-danger"><?php echo $_SESSION['error'];?></div><?php endif; ?>
-
             <?php echo $content; ?>
         </div>
-        <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+
+
+
+  	<script src="js/vendor/fallback/fallback.min.js"></script>
+	<script src="js/src/init.js"></script>
 
     </body>
 </html>
