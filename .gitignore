@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+config.rb
+.scss-lint.yml
+.editorconfig
+profilepictures
+.sass-cache/

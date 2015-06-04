@@ -1,16 +1,13 @@
 <?php
 
 require_once WWW_ROOT . 'controller' . DS . 'Controller.php';
-require_once WWW_ROOT . 'dao' . DS . 'TweetDAO.php';
 require_once WWW_ROOT . 'dao' . DS . 'ImageDAO.php';
 
 class TodosController extends Controller {
 
-	private $tweetDAO;
 	private $imageDAO;
 
 	function __construct() {
-		$this->tweetDAO = new TweetDAO();
 		$this->imageDAO = new ImageDAO();
 	}
 

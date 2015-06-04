@@ -1,9 +1,9 @@
 <?php
 class DAO {
 	private static $dbHost = "localhost";
-	private static $dbName = "todos";
-	private static $dbUser = "todos_User";
-	private static $dbPass = "todos_pass";
+	private static $dbName = "badget";
+	private static $dbUser = "badgetuser";
+	private static $dbPass = "badgetpass";
 	private static $sharedPDO;
 
 	protected $pdo;
