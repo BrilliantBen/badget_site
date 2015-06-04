@@ -1,3 +1,20 @@
+<section class="row">
+	<header class="col-md-12 col-lg-12">
+		<h1> Love live! </h1>
+		<div class="patternAbove"></div>
+
+		<h2> Experience the joy! </h2>
+
+		<aside>
+			<p>#pkp15</p>
+			<p><strong>Skynet</strong></p>
+		</aside>
+
+	</header>
+</section>
+
+
+
 <!-- <div>
     <div id="addimage">
         <h2>Add new Image</h2>
