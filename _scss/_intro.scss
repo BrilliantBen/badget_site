@@ -1,6 +1,22 @@
 .intro {
+// border:1px solid red;
+// height: 450px;
+ // @include clearfix;
 
+.flowb {
+	// border: 1px solid red;
+	left:0;
+	position: absolute;
+	// position: static;
+	z-index: 1;
+	top:0;
+	// top: -237px;
+	// left: 140px;
+	transition: 1s;
+	// display:inline-block;
+	// left: 50px;
 
+}
 	position: relative;
 	top: 159px;
 
@@ -57,16 +73,38 @@
 
 	a {
 		display: inline-block;
+		position: relative;
+		left: 150px;
+		 // @include clearfix;
+		top: 17px;
 		// border: 1px solid blue;
 
+	&:hover {
+
+.flowb {
+	// border: 1px solid red;
+
+	position: absolute;
+	// position: static;
+	z-index: 1;
+	top: -10px;
+	left: 40px;
+	transform: rotate(-20deg);
+	transition: 1s;
+	// display:inline-block;
+	// left: 50px;
+
+}
+	}
 
 	}
 	picture {
 
 		position: relative;
 		z-index: 2;
-		top: -20px;
-		left: -120px;
+		left: -270px;
+		top: -35px;
+		// left: -120px;
 
 
 	}
@@ -76,6 +114,20 @@
 
 @media screen and (max-width: 768px) {
 	.intro {
+
+// 		.flowb {
+// 	// border: 1px solid red;
+
+// 	position: absolute;
+// 	// position: static;
+// 	z-index: 1;
+// 	top: 237px;
+// 	left: 140px;
+// 	transition: 0s;
+// 	// display:inline-block;
+// 	// left: 50px;
+
+// }
 
 		top: 50px;
 		h1 {
@@ -101,21 +153,24 @@
 
 	}
 
-	picture {
-		position: relative;
-		z-index: 2;
-		// padding-left:35%;
-		padding-left:30vw;
-		// border: 1px solid red;
-		// left: 21vw;
+	// picture {
+	// 	position: relative;
+	// 	z-index: 2;
+	// 	// padding-left:35%;
+	// 	top: -20px;
+	// 	padding-left:30vw;
+	// 	// border: 1px solid red;
+	// 	// left: 21vw;
 
-		// top: -20px;
-		// left: -90px;
-		// left: 22vw;
-	}
+	// 	// top: -20px;
+	// 	// left: -90px;
+	// 	// left: 22vw;
+	// }
 
 	a {
 		// border: 1px solid red;
+		position: relative;
+			left: 55%;
 	}
 	}
 
@@ -125,51 +180,44 @@
 @media screen and (max-width: 624px) {
 	.intro {
 
-
-	picture {
+	a {
+		// border: 1px solid red;
 		position: relative;
-		z-index: 2;
-		// padding-left:30%;
-		// top: -20px;
-		// left: -90px;
-		// left: 22vw;
+			left: 57%;
 	}
-
 
 	}
 
 
 }
 
-@media screen and (max-width: 624px) {
-	.intro {
+// @media screen and (max-width: 624px) {
+// 	.intro {
 
 
-	picture {
-		position: relative;
-		z-index: 2;
-		// padding-left:27%;
-		// top: -20px;
-		// left: -90px;
-		padding-left: 26vw;
-	}
+// 	picture {
+// 		position: relative;
+// 		z-index: 2;
+// 		// padding-left:27%;
+// 		// top: -20px;
+// 		// left: -90px;
+// 		padding-left: 26vw;
+// 	}
 
 
-	}
+// 	}
 
 
-}
+// }
 
 @media screen and (max-width: 470px) {
 	.intro {
 
 
-	picture {
+a {
+		// border: 1px solid red;
 		position: relative;
-		z-index: 2;
-		// padding-left:23%;
-		// top: -20px;
-		padding-left: 20vw;
+			left: 61%;
 	}
 
 
@@ -247,3 +295,19 @@ canvas {
 	top: 200px;
 	left: 73px;
 }
+
+
+@media screen and (max-width: 768px) {
+
+canvas {
+	// border: 1px solid red;
+	display: none;
+	position: static;
+	 transform: rotate(0deg);
+	 // top:-20px;
+	 // left: 90px;
+	 z-index: -1;
+}
+}
+
+

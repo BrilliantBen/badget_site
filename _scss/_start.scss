@@ -14,11 +14,13 @@ body {
 * { Box-sizing: Border-box }
 
 .containerfix {
-	max-width: 960px;
+	max-width: 970px;
 	margin: 0 auto;
 	   width: 100%;
     overflow: hidden;
-}
+    // @include clearfix;
+	// border: 1px solid red;
+	}
 
 section {
 	position: relative;

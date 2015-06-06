@@ -58,12 +58,20 @@
 	</p>
 
 	<a href="#">
+
+
 			<picture>
-				<source media="(max-width: 780px)" srcset="assets/intro/buybutton.png">
+				<!-- <source media="(max-width: 780px)" srcset="assets/intro/buybutton.png"> -->
 				<img src="assets/intro/buybutton.png" alt="01" class="">
+			</picture>
+	<picture class="flowb">
+				<!-- <source media="(max-width: 780px)" srcset="assets/intro/buybutton.png"> -->
+				<img src="assets/intro/bird.png" alt="01" class="">
 			</picture>
 
 	</a>
+
+
 </article>
 
 <aside class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -73,7 +81,7 @@
 		</canvas>
 <picture >
 				<!-- <source media="(max-width: 768px)" srcset="#"> -->
-				<img src="assets/intro/phone_large.png" alt="01" class="">
+				<img src="assets/intro/phone_large.png" alt="01" class=" hidden-xs">
 			</picture>
 
 </aside>
