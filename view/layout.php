@@ -7,6 +7,7 @@
 	 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 	<link href="css/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/screen.css"/>
+	<script src="js/vendor/picturefill/picturefill.min.js" async></script>
     </head>
     <body>
 

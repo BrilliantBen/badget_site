@@ -23,8 +23,8 @@
 			'app.js': ['jQuery']
 		},
 		callback: function(success, failed) {
-			console.log(success);
-			console.log(failed);
+			// console.log(success);
+			// console.log(failed);
 		}
 	});
 })();
