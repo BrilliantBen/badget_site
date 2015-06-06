@@ -10,11 +10,9 @@
     </head>
     <body>
 
-        <div class="container">
+        <div class="container-fluid">
             <?php echo $content; ?>
         </div>
-
-
 
   	<script src="js/vendor/fallback/fallback.min.js"></script>
 	<script src="js/src/init.js"></script>

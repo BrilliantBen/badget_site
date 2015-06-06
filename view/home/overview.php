@@ -1,16 +1,59 @@
+<div class="containerfix">
 <section class="row">
+
 	<header class="col-md-12 col-lg-12">
-		<h1> Love live! </h1>
-		<div class="patternAbove"></div>
 
-		<h2> Experience the joy! </h2>
+		<picture class="ab">
+			<!-- <source media="(max-width: 640px)" srcset="assets/img/01.jpg"> -->
+			<source media="(max-width: 750px)" srcset="assets/header/leaves_750.png">
+			<img src="assets/header/leaves.png" alt="01" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<!-- <img src="assets/header/header_lg.png" alt="01" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
+		</picture>
 
-		<aside>
-			<p>#pkp15</p>
-			<p><strong>Skynet</strong></p>
-		</aside>
+
+
+
+		<div class="hidden">
+			<h1> Love live! </h1>
+			<h2> Experience the joy! </h2>
+
+			<aside>
+				<p>#pkp15</p>
+				<p><strong>Skynet</strong></p>
+			</aside>
+		</div>
+
+
+
+
+
+	<div class="headers">
+		<picture>
+			<!-- <source media="(max-width: 640px)" srcset="assets/img/01.jpg"> -->
+			<source media="(max-width: 600px)" srcset="assets/header/header_mdsm.png">
+			<source media="(max-width: 750px)" srcset="assets/header/header_md.png">
+			<img src="assets/header/header_lg.png" alt="01" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		</picture>
+
+		<picture class="birds">
+					<source media="(max-width: 750px)" srcset="">
+
+			<source media="(max-width: 780px)" srcset="assets/header/nbird_small.png">
+			<img src="assets/header/nbird.png" alt="01" class="">
+		</picture>
+
+		<picture class="birdsleft">
+			<source media="(max-width: 780px)" srcset="assets/header/fbirds_small.png">
+			<img src="assets/header/fbird.png" alt="01" class="">
+		</picture>
+
+	</div>
+
 
 	</header>
+
+	<div class="patternAbove"></div>
+
 </section>
 
 
@@ -66,3 +109,4 @@
 
     </div>
 </div> -->
+</div>
