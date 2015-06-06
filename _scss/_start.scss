@@ -1,10 +1,23 @@
 body {
 	background-image: url('../assets/patterns/pattern.jpg');
+	font-size: 62.5%;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    font-smoothing: grayscale;
+    // width: 100%;
+    // overflow: hidden;
+
 }
+
+* { Box-sizing: Border-box }
 
 .containerfix {
 	max-width: 960px;
 	margin: 0 auto;
+	   width: 100%;
+    overflow: hidden;
 }
 
 section {
@@ -35,6 +48,7 @@ section {
 .headers {
 	@include clearfix;
 	margin-left: 25px;
+	margin-top: 7px;
 }
 
 header {
@@ -65,92 +79,4 @@ header {
 	}
 }
 
-//leftbird
-@media screen and (max-width: 960px) {
-   .birdsleft {
-	// position: absolute;
-	bottom: 10.2vw;
-	left: 6.2vw;
-
-	img {
-			width:21vw;
-	}
-	}
-}
-
-
-@media screen and (max-width: 792px) {
-   .birdsleft {
-	// position: absolute;
-	bottom: 10vw;
-	right: 7.9vw;
-
-	img {
-			width:21vw;
-	}
-	}
-}
-
-
-//rightbird
-@media screen and (max-width: 960px) {
-   .birds {
-	// position: absolute;
-	bottom: 14.4vw;
-	right: 7.6vw;
-
-	img {
-			width:11vw;
-	}
-	}
-}
-
-@media screen and (max-width: 930px) {
-   .birds {
-	// position: absolute;
-	bottom: 14.2vw;
-	right: 7.6vw;
-
-	img {
-			width:11vw;
-	}
-	}
-}
-
-
-@media screen and (max-width: 880px) {
-   .birds {
-	// position: absolute;
-	bottom: 14vw;
-	right: 7.7vw;
-
-	img {
-			width:11vw;
-	}
-	}
-}
-
-@media screen and (max-width: 780px) {
-   .birds {
-	// position: absolute;
-	bottom: 13.8vw;
-	right: 7.9vw;
-
-	img {
-			width:11vw;
-	}
-	}
-}
-
-//both birds
-@media screen and (max-width: 750px) {
-   .birdsleft, .birds {
-	display: none;
-}
-
-	.headers {
-		margin-top: 5px;
-		margin-left: 0;
-	}
-}
 
