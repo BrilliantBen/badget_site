@@ -1,7 +1,13 @@
 (function() {
 
 
-	var heartbeat = 120;
+
+$.get("http://localhost/badget_site/api/pulse")
+		.done(function( respond ) {
+		})
+
+		.success( function ( respond ) {
+			var heartbeat = respond.maxPulse;
 	var variable = 0;
 
 Number.prototype.map = function ( in_min , in_max , out_min , out_max ) {
@@ -79,6 +85,14 @@ function clearIt(){
       	z = 0;
     }
 }
+
+
+		})
+
+		.fail ( function ( respond ) {
+			console.log("fail");
+		});
+
 
 
 
