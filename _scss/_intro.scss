@@ -1,4 +1,7 @@
 .intro {
+
+// padding:0;
+// margin:0;
 // border:1px solid red;
 // height: 450px;
  // @include clearfix;
@@ -21,21 +24,40 @@
 	top: 159px;
 
 	article {
+		// position: relative;
+// transform: rotate(-1deg);
+// margin-top: -30px;
+	}
 
+	header {
+		// position: relative;
 	}
 
 	h1 {
+		transform: rotate(-1.3deg);
 		font-family: eveleth;
 		font-size: 3.7em;
 		color: $yellow;
 		text-align: left;
+		padding-top: 30px;
+		// border: 1px solid red;
+		position: relative;
+
+		&::after {
+			// content: url('../assets/intro/cloud.png');
+			// position: relative;
+			  // position: absolute;
+    // top: -32px;
+    // left: 2px;
+
+		}
 
 
 
 	}
 
 	p {
-
+transform: rotate(-1.3deg);
 		padding: 5px;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -46,7 +68,7 @@
 		line-height: 1.3em;
 		margin-left: -10px;
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 		background-color: rgba(48, 183, 238, 0.7);
 		box-shadow: 1px 2px 3px rgba(48,183,238,.5);
 		max-width: 450px;
@@ -72,11 +94,13 @@
 	}
 
 	a {
+		transform: rotate(-1.3deg);
 		display: inline-block;
 		position: relative;
 		left: 150px;
 		 // @include clearfix;
 		top: 17px;
+		z-index: 2;
 		// border: 1px solid blue;
 
 	&:hover {
@@ -107,6 +131,16 @@
 		// left: -120px;
 
 
+	}
+
+	.logo {
+		position: absolute;
+		// left:0;
+		top: 7px;
+		// right: 0;
+		left: 398px;
+		// border: 1px solid red;
+		transform: rotate(-1.8deg);
 	}
 
 }
@@ -172,6 +206,18 @@
 		position: relative;
 			left: 55%;
 	}
+
+
+	.logo {
+		position: absolute;
+		// left:0;
+		top: 7px;
+		// right: 0;
+		left: 87vw;
+		// border: 1px solid red;
+		transform: rotate(-1.8deg);
+	}
+
 	}
 
 
@@ -235,6 +281,10 @@ a {
 
 			font-size: 4.7em;
 		}
+
+				.logo {
+		display: none;
+	}
 	}
 }
 
@@ -246,6 +296,8 @@ a {
 
 			font-size: 4em;
 		}
+
+
 	}
 }
 
@@ -307,6 +359,13 @@ canvas {
 	 // top:-20px;
 	 // left: 90px;
 	 z-index: -1;
+}
+
+.intro {
+
+	a,p,h1 {
+			transform: rotate(0deg);
+	}
 }
 }
 

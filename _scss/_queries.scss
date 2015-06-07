@@ -1,26 +1,23 @@
 //leftbird
 @media screen and (max-width: 960px) {
    .birdsleft {
-	// position: absolute;
-	bottom: 10.2vw;
-	left: 6.2vw;
+	bottom: 10.7vw;
+	left: 6.3vw;
 
 	img {
-			width:21vw;
-	}
+		width:21vw;
+		}
 	}
 }
 
-
 @media screen and (max-width: 792px) {
    .birdsleft {
-	// position: absolute;
-	bottom: 10vw;
-	right: 7.9vw;
+	bottom: 10.6vw;
+	left: 7.2vw;
 
 	img {
-			width:21vw;
-	}
+		width:21vw;
+		}
 	}
 }
 
@@ -28,50 +25,46 @@
 //rightbird
 @media screen and (max-width: 960px) {
    .birds {
-	// position: absolute;
 	bottom: 14.4vw;
 	right: 7.6vw;
 
 	img {
-			width:11vw;
-	}
+		width:11vw;
+		}
 	}
 }
 
 @media screen and (max-width: 930px) {
    .birds {
-	// position: absolute;
 	bottom: 14.2vw;
 	right: 7.6vw;
 
 	img {
-			width:11vw;
-	}
+		width:11vw;
+		}
 	}
 }
 
 
 @media screen and (max-width: 880px) {
    .birds {
-	// position: absolute;
 	bottom: 14vw;
 	right: 7.7vw;
 
 	img {
-			width:11vw;
-	}
+		width:11vw;
+		}
 	}
 }
 
 @media screen and (max-width: 780px) {
    .birds {
-	// position: absolute;
 	bottom: 13.8vw;
 	right: 7.9vw;
 
 	img {
-			width:11vw;
-	}
+		width:11vw;
+		}
 	}
 }
 
@@ -86,3 +79,150 @@
 		margin-left: 0;
 	}
 }
+
+
+@media screen and (max-width: 768px) {
+
+	.intro {
+		top: 50px;
+
+		h1 {
+			text-align: center;
+			font-size: 7vw;
+		}
+
+		p {
+			padding-left: 50px;
+			padding-left: 25px;
+			padding-right: 25px;
+			margin-top: 17px;
+			font-size: 3.5vw;
+			margin-right: 0;
+			max-width: none;
+			text-align: justify;
+			line-height: 1.35em;
+			margin-left: -10px;
+		}
+
+
+		a {
+			position: relative;
+			left: 55%;
+		}
+
+		.logo {
+			position: absolute;
+			top: 7px;
+			left: 87vw;
+			transform: rotate(-1.8deg);
+		}
+	}
+}
+
+@media screen and (max-width: 624px) {
+	.intro {
+
+		a {
+			position: relative;
+				left: 57%;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 470px) {
+	.intro {
+
+		a {
+			position: relative;
+			left: 61%;
+		}
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.intro {
+		h1 {
+			font-size: 4.7em;
+		}
+
+		.logo {
+			display: none;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 542px) {
+	.intro {
+
+		h1 {
+
+			font-size: 4em;
+		}
+	}
+}
+
+
+@media screen and (max-width: 590px) {
+	.intro {
+
+		p {
+
+			padding-left: 50px;
+			padding-left: 25px;
+			padding-right: 25px;
+			margin-top: 17px;
+			font-size: 2em;
+			margin-right: 0;
+			max-width: none;
+			text-align: justify;
+			line-height: 1.35em;
+			margin-left: -10px;
+		}
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.intro {
+
+		top: 30px;
+		h1 {
+
+			font-size: 3em;
+		}
+	}
+}
+
+
+
+//CNVS
+canvas {
+	transform: rotate(-11deg);
+	position: absolute;
+	z-index: 3;
+	top: 200px;
+	left: 73px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+	canvas {
+
+		display: none;
+		position: static;
+		transform: rotate(0deg);
+		z-index: -1;
+	}
+
+	.intro {
+
+		a,p,h1 {
+				transform: rotate(0deg);
+		}
+	}
+}
+

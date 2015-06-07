@@ -4,8 +4,9 @@
 	<header class="col-md-12 col-lg-12">
 
 		<picture class="ab">
+			<source media="(max-width: 500px)" srcset="assets/header/leaves_small.png">
 			<source media="(max-width: 768px)" srcset="assets/header/leaves_750.png">
-			<img src="assets/header/leaves.png" alt="01" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<img src="assets/header/leaves.png" alt="leaves" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		</picture>
 
 		<div class="hidden">
@@ -23,74 +24,70 @@
 			<picture>
 				<source media="(max-width: 600px)" srcset="assets/header/header_mdsm.png">
 				<source media="(max-width: 768px)" srcset="assets/header/header_md.png">
-				<img src="assets/header/header_lg.png" alt="01" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<img src="assets/header/header_lg.png" alt="Love live & Experience the joy" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			</picture>
 
 			<picture class="birds">
-				<source media="(max-width: 768px)" srcset="">
 				<source media="(max-width: 780px)" srcset="assets/header/nbird_small.png">
-				<img src="assets/header/nbird.png" alt="01" class="">
+				<img src="assets/header/nbird.png" alt="bird" class="">
 			</picture>
 
 			<picture class="birdsleft">
 				<source media="(max-width: 780px)" srcset="assets/header/fbirds_small.png">
-				<img src="assets/header/fbird.png" alt="01" class="">
+				<img src="assets/header/fbird.png" alt="birds" class="">
 			</picture>
 
 		</div>
 	</header>
-
-
-
 </section>
 
 <section class="intro row">
-<div class="keep col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+	<div class="keep col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 
-<article class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-	<header>
-		<h1>Live the moment</h1>
-	</header>
+		<article class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 
-	<p>
-		Are you one of those people who love festivals for <strong>more than</strong> just the <strong>music</strong>? Our app helps you increase the overall <strong>experience</strong>
-		by adding <strong>love</strong> to every moment of your day.
-	</p>
-
-	<a href="#">
-
-
-			<picture>
-				<!-- <source media="(max-width: 780px)" srcset="assets/intro/buybutton.png"> -->
-				<img src="assets/intro/buybutton.png" alt="01" class="">
+			<header>
+			<picture class="logo">
+				<img src="assets/intro/cloud.png" alt="logo" class="">
 			</picture>
-	<picture class="flowb">
-				<!-- <source media="(max-width: 780px)" srcset="assets/intro/buybutton.png"> -->
-				<img src="assets/intro/bird.png" alt="01" class="">
+				<h1>Live the moment</h1>
+
+
+			</header>
+
+			<p>
+				Are you one of those people who love festivals for <strong>more than</strong> just the <strong>music</strong>? Our app helps you increase the overall <strong>experience</strong>
+				by adding <strong>love</strong> to every moment of your day.
+			</p>
+
+			<a href="#">
+
+				<picture>
+					<img src="assets/intro/buybutton.png" alt="Get in appstore!" class="">
+				</picture>
+
+				<picture class="flowb">
+					<img src="assets/intro/bird.png" alt="tweet." class="">
+				</picture>
+
+			</a>
+
+		</article>
+
+		<aside class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+			<canvas width="151" height="85" id="cnvs" style="background-image: url(uploads/<?php echo $mostRecent['file_name'] ?>)">
+				<p>No canvas support</p>
+			</canvas>
+
+			<picture >
+				<img src="assets/intro/phone_large.png" alt="Live heartbeat" class=" hidden-xs">
 			</picture>
 
-	</a>
-
-
-</article>
-
-<aside class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-
-<canvas width="151" height="85" id="cnvs" style="background-image: url(uploads/<?php echo $mostRecent['file_name'] ?>)">
-			<p>No canvas support</p>
-		</canvas>
-<picture >
-				<!-- <source media="(max-width: 768px)" srcset="#"> -->
-				<img src="assets/intro/phone_large.png" alt="01" class=" hidden-xs">
-			</picture>
-
-</aside>
-
-
-
-
-</section>
+		</aside>
+	</section>
 </div>
+
 <div class="patternAbove"></div>
 
 

@@ -1,3 +1,5 @@
+* { Box-sizing: Border-box }
+
 body {
 	background-image: url('../assets/patterns/pattern.jpg');
 	font-size: 62.5%;
@@ -6,21 +8,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
     font-smoothing: grayscale;
-    // width: 100%;
-    // overflow: hidden;
-
 }
-
-* { Box-sizing: Border-box }
 
 .containerfix {
 	max-width: 970px;
 	margin: 0 auto;
-	   width: 100%;
+   width: 100%;
     overflow: hidden;
-    // @include clearfix;
-	// border: 1px solid red;
-	}
+}
 
 section {
 	position: relative;
@@ -38,9 +33,8 @@ section {
 * html .patternAbove{
   background:none;
   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
-    src='pattern-above.png',sizingMethod='scale');
+  src='pattern-above.png',sizingMethod='scale');
 }
-
 
 .ab {
 	position: absolute;
@@ -55,8 +49,6 @@ section {
 
 header {
 	@include clearfix;
-		// border: 1px solid red;
-
 }
 
 .birds {
@@ -66,19 +58,21 @@ header {
 	z-index: 2;
 
 	img {
-			width: 100%;
+		width: 100%;
 	}
 }
 
 .birdsleft {
 	position: absolute;
-	bottom: 102px;
-	left: 66px;
+	bottom: 105px;
+	left: 64px;
 	z-index: 2;
 
 	img {
-			width: 100%;
+		width: 100%;
 	}
 }
 
-
+.container-fluid {
+	padding: 0;
+}
