@@ -5,7 +5,7 @@ $imageDAO = new ImageDAO();
 
 $app->get('/images/?',function() use ($imageDAO){
     header("Content-Type: application/json");
-    echo json_encode($imageDAO->selectAll(), JSON_NUMERIC_CHECK);
+    echo json_encode($imageDAO->selectThree(), JSON_NUMERIC_CHECK);
     exit();
 });
 

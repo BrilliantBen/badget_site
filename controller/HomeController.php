@@ -12,8 +12,8 @@ class HomeController extends Controller {
 	}
 
 	public function overview() {
-		$images = $this->imageDAO->selectLast();
-		$this->set('images', $images);
+		// $images = $this->imageDAO->selectLast();
+		// $this->set('images', $images);
 
 
 		$errors = array();
@@ -55,6 +55,9 @@ class HomeController extends Controller {
 		}
 
 		$this->set('number', $number);
+
+		$images = $this->imageDAO->selectThree();
+		$this->set('images', $images);
 
 	}
 

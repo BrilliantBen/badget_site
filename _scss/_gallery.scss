@@ -3,6 +3,7 @@
 .gallery {
 	position: relative;
 	// top: 60px;
+	z-index: 0;
 
 	margin-top: 60px;
 	transform: rotate(-0.5deg);
@@ -17,6 +18,7 @@
 		margin-top: 55px;
 		position: relative;
 		left: 0;
+		z-index: 2;
 		margin-left:-20px;
 
 		.number {
@@ -48,6 +50,12 @@
 			margin-top: 10px;
 
 		}
+/////// images
+.r{
+	position:relative;
+	z-index:-2;
+	background-color: blue;
+}
 
 
 	}
@@ -79,7 +87,7 @@
 	margin-left:0;
 	text-align: center;
 	width: 100%;
-	display: none;
+	// display: none;
 
 		.number {
 			color: #de5051;
@@ -101,6 +109,7 @@
 			margin-left: 0;
 margin-top: 60px;
 		p {
+
 			font-size: 4vw;
 			transform: rotate(-1deg);
 
@@ -111,8 +120,10 @@ margin-top: 60px;
 		position: relative;
 		top:-26vw;
 		left:-16vw;
+		z-index: 2;
 	}
 }
+
 
 @media screen and (max-width: 550px) {
 .total {
@@ -151,8 +162,62 @@ margin-top: 60px;
 
 }
 
+ul.row {
+
+}
+li {
+	border:1px solid red;
+	@include clearfix;
+}
 .frame {
 
-		left:-15vw;
+		// left:-15vw;
 	}
 }
+
+.images {
+	position: relative;
+	z-index: 2;
+
+	div {
+
+	}
+}
+
+.measure {
+	position: absolute;
+	top: 0;
+	border: 1px solid red;
+	@include clearfix;
+}
+
+.scale {
+	transform-origin: center;
+	transform: scale(0.9,0.8);
+
+}
+
+li {
+
+
+transform: rotate(1deg);
+	&:first-child {
+			transform: rotate(-1deg);
+	}
+
+	&:last-child{
+		position: relative;
+		// left: 200px;
+		transform: rotate(-1deg);
+	}
+}
+
+.move {
+
+}
+
+img.move {
+	margin-left: 50px;
+}
+
+

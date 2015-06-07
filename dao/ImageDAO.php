@@ -6,11 +6,22 @@ class ImageDAO extends DAO {
 
   public function selectAll() {
     $sql = "SELECT *
-    				FROM `MA4_images`";
+    		FROM `MA4_images`";
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
+
+   public function selectThree() {
+    $sql = "SELECT *
+    		FROM `MA4_images`
+    		ORDER BY `smiles` DESC
+    		LIMIT 3";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
 
    public function selectLast() {
     $sql = "SELECT * FROM `MA4_images` ORDER BY `created` LIMIT 6";

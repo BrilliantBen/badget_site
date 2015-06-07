@@ -128,7 +128,7 @@
 				</p>
 
 
-				<picture class="">
+					<picture class="">
 						<!-- <source media="(max-width: 500px)" srcset="assets/gallery/divider.png"> -->
 						<source media="(max-width: 550px)" srcset="assets/gallery/border.png">
 						<img src="assets/gallery/total.png" alt="smiles" class="frame col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0  col-md-12 col-md-offset-0  col-lg-12 col-lg-offset-0 ">
@@ -140,6 +140,66 @@
 
 		</section>
 
+		<div class="row images">
+
+ <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-12 col-sm-offset-1 col-lg-12 col-lg-offset-0">
+      <?php
+        if (!empty($images)) {?>
+           <ul class="row">
+            <?php foreach ($images as $image){ ?>
+                <li class="" id="image-1123">
+
+
+
+
+			<picture class="">
+				<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
+				<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
+				<img src="assets/gallery/frame.png" alt="divider" class="move col-xs-10 col-xs-offset-1 col-sm-6 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
+			</picture>
+
+
+
+
+                </li>
+            <?php } ?>
+           </ul>
+        <?php }else{
+               echo "<p> no images yet </p>";
+        }?>
+
+    </div>
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-12 col-sm-offset-1 col-lg-12 col-lg-offset-0 measure">
+      <?php
+        if (!empty($images)) {?>
+           <ul class="row">
+            <?php foreach ($images as $image){ ?>
+                <li class="move" id="image-1123">
+
+
+
+
+			<picture class="">
+				<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
+				<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
+				<img src="uploads/test.jpg" alt="divider" class="move scale col-xs-10 col-xs-offset-1 col-sm-6 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
+			</picture>
+
+
+
+
+                </li>
+            <?php } ?>
+           </ul>
+        <?php }else{
+               echo "<p> no images yet </p>";
+        }?>
+
+    </div>
+
+</div>
+
 
 
 	<div class="patternAbove"></div>
@@ -148,22 +208,9 @@
 
 
 
-<!-- <div>
-      <?php
-        if (!empty($images)) {?>
-           <ul>
-            <?php foreach ($images as $image){ ?>
-                <li class="priority<?php echo $image["concert"]?>" id="image-1123"><?php echo $image["concert"]?>
-                    <img src="assets/images/<?php echo $image["image"]?>" alt="<?php echo $image["image"]?>" height="42" width="42">
-                    <a class="delete" href="index.php?page=delete-image&amp;id=<?php echo $image["id"]?>">done</a>
-                </li>
-            <?php } ?>
-           </ul>
-        <?php }else{
-               echo "<p> no images yet </p>";
-        }?>
-
-    </div> -->
 </div>
 
+
+
 </div>
+<!-- col-xs-8 col-xs-offset-2 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 col-sm-6 col-md-6  -->
