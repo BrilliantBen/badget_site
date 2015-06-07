@@ -12,8 +12,8 @@
 		<script>
 		WebFontConfig = {
 			custom: {
-				families: ['eveleth', 'bitter', 'bitterbold'],
-				urls: ['fonts/eveleth/eveleth.css', 'fonts/bitter/bitter.css'],
+				families: ['eveleth', 'bitter', 'bitterbold', 'brush'],
+				urls: ['fonts/eveleth/eveleth.css', 'fonts/bitter/bitter.css', 'fonts/brush/brush.css'],
 			}
 		};
 		(function() {

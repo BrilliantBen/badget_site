@@ -80,76 +80,114 @@
 	}
 }
 
+////
 
 @media screen and (max-width: 768px) {
 
-	.intro {
-		top: 50px;
+canvas {
+	display: none;
+	position: static;
+	 transform: rotate(0deg);
 
+	 z-index: -1;
+}
+
+.intro {
+
+	a,p,h1 {
+			transform: rotate(0deg);
+	}
+}
+}
+
+@media screen and (max-width: 768px) {
+	.intro {
+
+
+
+		top: 50px;
 		h1 {
 			text-align: center;
 			font-size: 7vw;
 		}
 
 		p {
-			padding-left: 50px;
-			padding-left: 25px;
-			padding-right: 25px;
-			margin-top: 17px;
-			font-size: 3.5vw;
-			margin-right: 0;
-			max-width: none;
-			text-align: justify;
-			line-height: 1.35em;
-			margin-left: -10px;
-		}
 
 
-		a {
-			position: relative;
-			left: 55%;
-		}
+	padding-left: 50px;
+		padding-left: 25px;
+		padding-right: 25px;
+		margin-top: 17px;
+		font-size: 3.5vw;
+		margin-right: 0;
+		max-width: none;
+		text-align: justify;
+		line-height: 1.35em;
+		margin-left: -10px;
 
-		.logo {
-			position: absolute;
-			top: 7px;
-			left: 87vw;
-			transform: rotate(-1.8deg);
-		}
 	}
+
+
+
+	a {
+		position: relative;
+			left: 55%;
+	}
+
+
+	.logo {
+		position: absolute;
+		top: 7px;
+		left: 87vw;
+		transform: rotate(-1.8deg);
+	}
+
+	}
+
+
 }
 
 @media screen and (max-width: 624px) {
 	.intro {
 
-		a {
-			position: relative;
-				left: 57%;
-		}
+	a {
+		position: relative;
+			left: 57%;
 	}
+
+	}
+
+
 }
-
-
 
 @media screen and (max-width: 470px) {
 	.intro {
 
-		a {
-			position: relative;
+
+a {
+		position: relative;
 			left: 61%;
-		}
 	}
+
+
+	}
+
+
 }
+
+
+
 
 @media screen and (max-width: 670px) {
 	.intro {
 		h1 {
+
 			font-size: 4.7em;
 		}
 
-		.logo {
-			display: none;
-		}
+				.logo {
+		display: none;
+	}
 	}
 }
 
@@ -157,11 +195,12 @@
 
 @media screen and (max-width: 542px) {
 	.intro {
-
 		h1 {
 
 			font-size: 4em;
 		}
+
+
 	}
 }
 
@@ -169,19 +208,23 @@
 @media screen and (max-width: 590px) {
 	.intro {
 
+
 		p {
 
-			padding-left: 50px;
-			padding-left: 25px;
-			padding-right: 25px;
-			margin-top: 17px;
-			font-size: 2em;
-			margin-right: 0;
-			max-width: none;
-			text-align: justify;
-			line-height: 1.35em;
-			margin-left: -10px;
-		}
+
+	padding-left: 50px;
+		padding-left: 25px;
+		padding-right: 25px;
+		margin-top: 17px;
+		font-size: 2em;
+		margin-right: 0;
+		max-width: none;
+
+		text-align: justify;
+		line-height: 1.35em;
+		margin-left: -10px;
+
+	}
 	}
 }
 
@@ -197,32 +240,4 @@
 }
 
 
-
-//CNVS
-canvas {
-	transform: rotate(-11deg);
-	position: absolute;
-	z-index: 3;
-	top: 200px;
-	left: 73px;
-}
-
-
-@media screen and (max-width: 768px) {
-
-	canvas {
-
-		display: none;
-		position: static;
-		transform: rotate(0deg);
-		z-index: -1;
-	}
-
-	.intro {
-
-		a,p,h1 {
-				transform: rotate(0deg);
-		}
-	}
-}
 

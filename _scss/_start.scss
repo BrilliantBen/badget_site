@@ -1,6 +1,7 @@
 * { Box-sizing: Border-box }
 
 body {
+position: relative;
 	background-image: url('../assets/patterns/pattern.jpg');
 	font-size: 62.5%;
 	font-weight: normal;
@@ -8,6 +9,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
     font-smoothing: grayscale;
+    height: 100%;
+     margin: 0;
+    padding: 0
+
 }
 
 .containerfix {
@@ -15,6 +20,7 @@ body {
 	margin: 0 auto;
    width: 100%;
     overflow: hidden;
+    	// border:1px solid yellow;
 }
 
 section {
@@ -22,10 +28,12 @@ section {
 }
 
 .patternAbove{
+
   background:url('../assets/patterns/overlaypattern.png');
   width:100%;
   height:100%;
   position:absolute;
+  	// border:1px solid orange;
   top:0;
   left:0;
 }

@@ -1,94 +1,151 @@
 <div class="containerfix">
-<section class="row">
+	<section class="row">
 
-	<header class="col-md-12 col-lg-12">
+		<header class="col-md-12 col-lg-12">
 
-		<picture class="ab">
-			<source media="(max-width: 500px)" srcset="assets/header/leaves_small.png">
-			<source media="(max-width: 768px)" srcset="assets/header/leaves_750.png">
-			<img src="assets/header/leaves.png" alt="leaves" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		</picture>
-
-		<div class="hidden">
-			<h1> Love live! </h1>
-			<h2> Experience the joy! </h2>
-
-			<aside>
-				<p>#pkp15</p>
-				<p><strong>Skynet</strong></p>
-			</aside>
-		</div>
-
-		<div class="headers">
-
-			<picture>
-				<source media="(max-width: 600px)" srcset="assets/header/header_mdsm.png">
-				<source media="(max-width: 768px)" srcset="assets/header/header_md.png">
-				<img src="assets/header/header_lg.png" alt="Love live & Experience the joy" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<picture class="ab">
+				<source media="(max-width: 500px)" srcset="assets/header/leaves_small.png">
+				<source media="(max-width: 768px)" srcset="assets/header/leaves_750.png">
+				<img src="assets/header/leaves.png" alt="leaves" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			</picture>
 
-			<picture class="birds">
-				<source media="(max-width: 780px)" srcset="assets/header/nbird_small.png">
-				<img src="assets/header/nbird.png" alt="bird" class="">
-			</picture>
-
-			<picture class="birdsleft">
-				<source media="(max-width: 780px)" srcset="assets/header/fbirds_small.png">
-				<img src="assets/header/fbird.png" alt="birds" class="">
-			</picture>
-
-		</div>
-	</header>
-</section>
-
-<section class="intro row">
-	<div class="keep col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-
-		<article class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-
-			<header>
-			<picture class="logo">
-				<img src="assets/intro/cloud.png" alt="logo" class="">
-			</picture>
-				<h1>Live the moment</h1>
 
 
-			</header>
+			<div class="headers">
 
-			<p>
-				Are you one of those people who love festivals for <strong>more than</strong> just the <strong>music</strong>? Our app helps you increase the overall <strong>experience</strong>
-				by adding <strong>love</strong> to every moment of your day.
-			</p>
 
-			<a href="#">
+			<div class="hidden">
+				<h1> Love live! </h1>
+				<h2> Experience the joy! </h2>
+
+				<aside>
+					<p>#pkp15</p>
+					<p><strong>Skynet</strong></p>
+				</aside>
+			</div>
 
 				<picture>
-					<img src="assets/intro/buybutton.png" alt="Get in appstore!" class="">
+					<source media="(max-width: 600px)" srcset="assets/header/header_mdsm.png">
+					<source media="(max-width: 768px)" srcset="assets/header/header_md.png">
+					<img src="assets/header/header_lg.png" alt="Love live & Experience the joy" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				</picture>
 
-				<picture class="flowb">
-					<img src="assets/intro/bird.png" alt="tweet." class="">
+				<picture class="birds">
+					<source media="(max-width: 780px)" srcset="assets/header/nbird_small.png">
+					<img src="assets/header/nbird.png" alt="bird" class="">
 				</picture>
 
-			</a>
+				<picture class="birdsleft">
+					<source media="(max-width: 780px)" srcset="assets/header/fbirds_small.png">
+					<img src="assets/header/fbird.png" alt="birds" class="">
+				</picture>
 
-		</article>
+			</div>
+		</header>
+	</section>
 
-		<aside class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	<section class="intro row">
+		<div class="keep col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 
-			<canvas width="151" height="85" id="cnvs" style="background-image: url(uploads/<?php echo $mostRecent['file_name'] ?>)">
-				<p>No canvas support</p>
-			</canvas>
+			<article class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 
-			<picture >
-				<img src="assets/intro/phone_large.png" alt="Live heartbeat" class=" hidden-xs">
+				<header>
+					<picture class="logo">
+						<img src="assets/intro/cloud.png" alt="logo" class="">
+					</picture>
+					<h1>Live the moment</h1>
+				</header>
+
+				<p>
+					Are you one of those people who love festivals for <strong>more than</strong> just the <strong>music</strong>? Our app helps you increase the overall <strong>experience</strong>
+					by adding <strong>love</strong> to every moment of your day.
+				</p>
+
+				<a href="#">
+
+					<picture>
+						<img src="assets/intro/buybutton.png" alt="Get in appstore!" class="">
+					</picture>
+
+					<picture class="flowb">
+						<img src="assets/intro/bird.png" alt="tweet." class="">
+					</picture>
+
+				</a>
+
+			</article>
+
+			<aside class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+				<canvas width="151" height="85" id="cnvs" style="background-image: url(uploads/<?php echo $mostRecent['file_name'] ?>)">
+					<p>No canvas support</p>
+				</canvas>
+
+				<picture >
+					<img src="assets/intro/phone_large.png" alt="Live heartbeat" class=" hidden-xs">
+				</picture>
+
+			</aside>
+		</div>
+	</section>
+
+
+		<section class="row gallery">
+
+			<header class="hidden">
+				<h1>Live smiles spread love</h1>
+			</header>
+
+			<picture class="div">
+				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
+				<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
+				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-lg-12">
 			</picture>
 
-		</aside>
-	</section>
+
+			<article class="gall col-xs-12 col-sm-7 col-md-7 col-lg-7">
+
+				<header>
+					<picture class="">
+						<source media="(max-width: 500px)" srcset="assets/gallery/header_small.png">
+						<!-- <source media="(max-width: 768px)" srcset="assets/gallery/divider.png"> -->
+						<img src="assets/gallery/title_large.png" alt="Live smiles spread love" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					</picture>
+				</header>
+
+				<p>
+					Snap a pic and detect the number of smiles. <br> Check out the happiest of the bunch below.
+				</p>
+
+
+
+			</article>
+
+			<aside class="total col-xs-10 cols-xs-offset-1 col-sm-5 col-md-5 col-lg-5">
+				<p class="number">
+				<?php printf("%04d", $number)
+				?>
+				</p>
+
+
+				<picture class="">
+						<!-- <source media="(max-width: 500px)" srcset="assets/gallery/divider.png"> -->
+						<source media="(max-width: 550px)" srcset="assets/gallery/border.png">
+						<img src="assets/gallery/total.png" alt="smiles" class="frame col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0  col-md-12 col-md-offset-0  col-lg-12 col-lg-offset-0 ">
+					</picture>
+
+			</aside>
+
+
+
+		</section>
+
+
+
+	<div class="patternAbove"></div>
 </div>
 
-<div class="patternAbove"></div>
+
 
 
 <!-- <div>

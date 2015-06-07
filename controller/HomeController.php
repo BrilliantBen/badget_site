@@ -37,7 +37,7 @@ class HomeController extends Controller {
 				$this->redirect('index.php');
 		}
 
-		}
+	}
 
 
 
@@ -46,6 +46,16 @@ class HomeController extends Controller {
 		}
 
 		$this->set('errors', $errors);
+
+		$smiles = $this->imageDAO->selectAll();
+		$number = 0;
+
+		foreach ($smiles as $smile) {
+			$number+=$smile["smiles"];
+		}
+
+		$this->set('number', $number);
+
 	}
 
 

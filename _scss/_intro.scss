@@ -1,36 +1,14 @@
 .intro {
 
-// padding:0;
-// margin:0;
-// border:1px solid red;
-// height: 450px;
- // @include clearfix;
-
-.flowb {
-	// border: 1px solid red;
-	left:0;
-	position: absolute;
-	// position: static;
-	z-index: 1;
-	top:0;
-	// top: -237px;
-	// left: 140px;
-	transition: 1s;
-	// display:inline-block;
-	// left: 50px;
-
-}
 	position: relative;
 	top: 159px;
 
-	article {
-		// position: relative;
-// transform: rotate(-1deg);
-// margin-top: -30px;
-	}
-
-	header {
-		// position: relative;
+	.flowb {
+		left:0;
+		position: absolute;
+		z-index: 1;
+		top:0;
+		transition: 1s;
 	}
 
 	h1 {
@@ -40,24 +18,11 @@
 		color: $yellow;
 		text-align: left;
 		padding-top: 30px;
-		// border: 1px solid red;
 		position: relative;
-
-		&::after {
-			// content: url('../assets/intro/cloud.png');
-			// position: relative;
-			  // position: absolute;
-    // top: -32px;
-    // left: 2px;
-
-		}
-
-
-
 	}
 
 	p {
-transform: rotate(-1.3deg);
+		transform: rotate(-1.3deg);
 		padding: 5px;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -70,7 +35,7 @@ transform: rotate(-1.3deg);
 		position: relative;
 		z-index: 3;
 		background-color: rgba(48, 183, 238, 0.7);
-		box-shadow: 1px 2px 3px rgba(48,183,238,.5);
+		box-shadow: 10px 10px 50px rgba(48,183,238,.5);
 		max-width: 450px;
 	}
 
@@ -90,7 +55,6 @@ transform: rotate(-1.3deg);
 			top: 0;
 			left: -50px;
 		}
-
 	}
 
 	a {
@@ -98,25 +62,19 @@ transform: rotate(-1.3deg);
 		display: inline-block;
 		position: relative;
 		left: 150px;
-		 // @include clearfix;
 		top: 17px;
 		z-index: 2;
-		// border: 1px solid blue;
 
 	&:hover {
 
-.flowb {
-	// border: 1px solid red;
+		.flowb {
 
 	position: absolute;
-	// position: static;
 	z-index: 1;
 	top: -10px;
 	left: 40px;
 	transform: rotate(-20deg);
 	transition: 1s;
-	// display:inline-block;
-	// left: 50px;
 
 }
 	}
@@ -128,7 +86,6 @@ transform: rotate(-1.3deg);
 		z-index: 2;
 		left: -270px;
 		top: -35px;
-		// left: -120px;
 
 
 	}
@@ -146,196 +103,6 @@ transform: rotate(-1.3deg);
 }
 
 
-@media screen and (max-width: 768px) {
-	.intro {
-
-// 		.flowb {
-// 	// border: 1px solid red;
-
-// 	position: absolute;
-// 	// position: static;
-// 	z-index: 1;
-// 	top: 237px;
-// 	left: 140px;
-// 	transition: 0s;
-// 	// display:inline-block;
-// 	// left: 50px;
-
-// }
-
-		top: 50px;
-		h1 {
-			text-align: center;
-			font-size: 7vw;
-		}
-
-		p {
-
-
-	padding-left: 50px;
-		padding-left: 25px;
-		padding-right: 25px;
-		margin-top: 17px;
-		font-size: 3.5vw;
-		margin-right: 0;
-		max-width: none;
-		// margin: 0 auto;
-		// border: 1px solid red;
-		text-align: justify;
-		line-height: 1.35em;
-		margin-left: -10px;
-
-	}
-
-	// picture {
-	// 	position: relative;
-	// 	z-index: 2;
-	// 	// padding-left:35%;
-	// 	top: -20px;
-	// 	padding-left:30vw;
-	// 	// border: 1px solid red;
-	// 	// left: 21vw;
-
-	// 	// top: -20px;
-	// 	// left: -90px;
-	// 	// left: 22vw;
-	// }
-
-	a {
-		// border: 1px solid red;
-		position: relative;
-			left: 55%;
-	}
-
-
-	.logo {
-		position: absolute;
-		// left:0;
-		top: 7px;
-		// right: 0;
-		left: 87vw;
-		// border: 1px solid red;
-		transform: rotate(-1.8deg);
-	}
-
-	}
-
-
-}
-
-@media screen and (max-width: 624px) {
-	.intro {
-
-	a {
-		// border: 1px solid red;
-		position: relative;
-			left: 57%;
-	}
-
-	}
-
-
-}
-
-// @media screen and (max-width: 624px) {
-// 	.intro {
-
-
-// 	picture {
-// 		position: relative;
-// 		z-index: 2;
-// 		// padding-left:27%;
-// 		// top: -20px;
-// 		// left: -90px;
-// 		padding-left: 26vw;
-// 	}
-
-
-// 	}
-
-
-// }
-
-@media screen and (max-width: 470px) {
-	.intro {
-
-
-a {
-		// border: 1px solid red;
-		position: relative;
-			left: 61%;
-	}
-
-
-	}
-
-
-}
-
-
-
-
-@media screen and (max-width: 670px) {
-	.intro {
-		h1 {
-
-			font-size: 4.7em;
-		}
-
-				.logo {
-		display: none;
-	}
-	}
-}
-
-
-
-@media screen and (max-width: 542px) {
-	.intro {
-		h1 {
-
-			font-size: 4em;
-		}
-
-
-	}
-}
-
-
-@media screen and (max-width: 590px) {
-	.intro {
-
-
-		p {
-
-
-	padding-left: 50px;
-		padding-left: 25px;
-		padding-right: 25px;
-		margin-top: 17px;
-		font-size: 2em;
-		margin-right: 0;
-		max-width: none;
-		// margin: 0 auto;
-		// border: 1px solid red;
-		text-align: justify;
-		line-height: 1.35em;
-		margin-left: -10px;
-
-	}
-	}
-}
-
-@media screen and (max-width: 470px) {
-	.intro {
-
-		top: 30px;
-		h1 {
-
-			font-size: 3em;
-		}
-	}
-}
 
 
 
@@ -349,24 +116,5 @@ canvas {
 }
 
 
-@media screen and (max-width: 768px) {
-
-canvas {
-	// border: 1px solid red;
-	display: none;
-	position: static;
-	 transform: rotate(0deg);
-	 // top:-20px;
-	 // left: 90px;
-	 z-index: -1;
-}
-
-.intro {
-
-	a,p,h1 {
-			transform: rotate(0deg);
-	}
-}
-}
 
 
