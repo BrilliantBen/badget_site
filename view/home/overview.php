@@ -242,16 +242,39 @@
 			</picture>
 
 
-			<section>
+			<section class="video">
 				<header class="hidden">
 					<h1>Know more? Watch this video!</h1>
 				</header>
 
 
-			<article>
+			<article class="row">
 
-				dw
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  ">
+				<picture class="top">
+
+					<img src="assets/video/frame.png" alt="divider" class="hidden-xs col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-10 col-md-10 col-lg-10">
+				</picture>
+
+
+				<div class="actv">
+				<video controls src="assets/video/main.mp4" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2"></video>
+				</div>
+			</div>
 			</article>
+
+		<div>
+			<aside class="buy col-lg-10  col-md-10  col-sm-10  col-xs-12 col-xs-offset-0 ">
+					<a href="#">
+
+					<picture>
+						<img src="assets/intro/buybutton.png" width="414" height="180" alt="Get in appstore!" class="but ">
+					</picture>
+
+
+				</a>
+			</aside>
+			</div>
 			</section>
 			<div class="patternAbove"></div>
 		</div>
@@ -260,5 +283,6 @@
 
 
 	</div>
+	<!-- col-lg-offset-2 col-md-offset-2 col-sm-offset-1 -->
 </div>
 <!-- col-xs-8 col-xs-offset-2 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 col-sm-6 col-md-6  -->
