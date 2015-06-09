@@ -14,17 +14,23 @@
 	// border:1px solid red;
 
 
+
 }
 
 
 	.total {
+
 		margin-top: 55px;
 		position: relative;
 		left: 0;
 		z-index: 2;
 		margin-left:-20px;
 
+
+
+
 		.number {
+
 			color: #de5051;
 			font-family: brush;
 			transform: rotate(-7deg);
@@ -36,6 +42,7 @@
 		}
 	}
 	.gall {
+
 	// border: 1px solid blue;
 	margin-left: 20px;
 		position: relative;
@@ -75,7 +82,7 @@
 
 
 .images {
-	margin-top: 70px;
+	margin-top: 15px;
 	position: relative;
 	z-index: 2;
 	transform: rotate(-0.5deg);
@@ -91,10 +98,27 @@
 
 .measure {
 	position: absolute;
-	top: 0;
+	top: 2px;
+left: -2.2px;
 
 	// border: 1px solid red;
 	@include clearfix;
+
+	li {
+
+		transform: rotate(-0.4deg);
+
+		&:first-child {
+
+		position: relative;
+			transform: rotate(-2deg);
+	}
+&:last-child{
+		position: relative;
+		transform: rotate(-0.2deg);
+
+	}
+	}
 }
 
 .scale {
@@ -187,6 +211,19 @@ h3 {
 	right: 150px;
 }
 
+.one, .two {
+		position: absolute;
+	top: 182px;
+	z-index: 0;
+	right: 290px;
+
+	&:last-of-type{
+		left: 282px;
+		right: 0;
+		top: 180px;
+	}
+}
+
 @media screen and (max-width: 970px) {
 .total{
 
@@ -205,8 +242,20 @@ h3 {
 	}
 }
 
+.k-1 {
+	// box-shadow: inset 9px 8px 14px -6px rgba(0,0,0,0.75);
+left: 1px;
+top: -6px;
+}
+
+
+.k-3 {
+	top: 5px;
+	left: -0.5px;
+}
 
 @media screen and (max-width: 960px) {
+
 .colored:last-of-type {
 	// padding: 20px;
 	background-color: rgba(240,232,138,0.20);
@@ -277,6 +326,23 @@ h3 {
 
 
 @media screen and (max-width: 768px) {
+.div {
+	position: relative;
+	top: 3.5vw;
+}
+	.total {
+		margin-top: 12vw;
+
+		img {
+			transform: scale(.7,.7);
+		}
+
+
+
+		height: 32vw;
+
+
+	}
 img.move {
 	margin-left: 7vw;
 }
@@ -298,9 +364,9 @@ img.move {
 			color: #de5051;
 			font-family: brush;
 			transform: rotate(-5deg);
-			font-size: 8em;
+			font-size: 16vw;
 			position: relative;
-			top: 0;
+			top: 2vw;;
 			left: 0;
 			z-index: 2;
 		}
@@ -347,6 +413,17 @@ transform: rotate(0deg);
 
 @media screen and (max-width: 550px) {
 
+
+	.total {
+			height: 50vw;
+		margin-top: 55px;
+		transform: scale(0.85,0.85);
+
+		img {
+			transform: scale(1,1);
+		}
+	}
+
 .camera {
 	// left: 4000vw;;
 	top: 0.02vw;
@@ -385,7 +462,7 @@ img.move {
 	// padding: 20px;
 	background-color: rgba(240,232,138,0.3);
 	// box-shadow: inset 15px;
-	box-shadow: inset 0px 20px 14px -6px rgba(33,178,233,0.9);
+	box-shadow: inset 0px 20px 14px -6px rgba(30,189,252,.8);
 	// box-shadow: 1px 1px 50px rgba(255,0,0,.1);
 	// mix-blend-mode: multiply;
 }
@@ -395,7 +472,7 @@ img.move {
 	padding-bottom: 120px;
 	background-color: rgba(240,232,138,0.3);
 	// box-shadow: inset 15px;
-	box-shadow: inset 0px -20px 14px -6px rgba(33,178,233,0.9);
+	box-shadow: inset 0px -20px 14px -6px rgba(30,189,252,.8);
 	// box-shadow: 1px 1px 50px rgba(255,0,0,.1);
 	// mix-blend-mode: multiply;
 }

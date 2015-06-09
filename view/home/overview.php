@@ -137,7 +137,8 @@
 					<picture class="">
 						<!-- <source media="(max-width: 500px)" srcset="assets/gallery/divider.png"> -->
 						<source media="(max-width: 550px)" srcset="assets/gallery/border.png">
-						<source media="(min-width: 550px)" srcset="assets/gallery/total.png">
+						<source media="(max-width: 768px)" srcset="assets/gallery/frame_large.png">
+						<source media="(min-width: 768px)" srcset="assets/gallery/total.png">
 						<img src="assets/gallery/total.png" alt="smiles" class="frame col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0  col-md-12 col-md-offset-0  col-lg-12 col-lg-offset-0 ">
 					</picture>
 
@@ -159,6 +160,16 @@
 		<div class="regbird">
 			<picture class="">
 						<img src="assets/gallery/regbird.png" alt="regular" class="hidden-xs">
+					</picture>
+		</div>
+
+			<div class="blocks">
+			<picture class="one">
+						<img src="assets/gallery/blocks.jpg" alt="regular" class="hidden-xs hidden-sm hidden-md">
+					</picture>
+
+					<picture class="two">
+						<img src="assets/gallery/blocks.jpg" alt="regular" class="hidden-xs hidden-sm hidden-md">
 					</picture>
 		</div>
 
@@ -200,7 +211,7 @@
 				           <ul class="row ">
 				            <?php foreach ($images as $image){ ?>
 				              <?php $otherclass++; ?>
-				           		<li class="move c-<?php echo $otherclass ?>" id="image-1123">
+				           		<li class="move k-<?php echo $otherclass ?>" id="image-1123">
 
 									<picture class="">
 										<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
