@@ -12,6 +12,7 @@
 
 
 
+
 			<div class="headers">
 
 
@@ -68,11 +69,11 @@
 				<a href="#">
 
 					<picture>
-						<img src="assets/intro/buybutton.png" alt="Get in appstore!" class="">
+						<img src="assets/intro/buybutton.png" width="414" height="180" alt="Get in appstore!" class="">
 					</picture>
 
 					<picture class="flowb">
-						<img src="assets/intro/bird.png" alt="tweet." class="">
+						<img src="assets/intro/bird.png" alt="tweet" class="">
 					</picture>
 
 				</a>
@@ -148,6 +149,19 @@
 
 		<div class="row images colored">
 
+		<div class="camera">
+			<picture class="">
+						<img src="assets/gallery/camerabird.png" alt="shoot" class="">
+					</picture>
+		</div>
+
+
+		<div class="regbird">
+			<picture class="">
+						<img src="assets/gallery/regbird.png" alt="regular" class="hidden-xs">
+					</picture>
+		</div>
+
 			<div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-sm-offset-0 col-lg-12 col-lg-offset-0 gone">
 			    <?php
 			    	$class = 0;
@@ -193,6 +207,7 @@
 										<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
 										<img src="uploads/test.jpg" alt="divider" class="move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
 									</picture>
+
 
 				                </li>
 

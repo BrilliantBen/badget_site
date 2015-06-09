@@ -1,8 +1,11 @@
-// .wrap {}
-
+.div {
+	position: relative;
+	top: 60px;
+	z-index: 5;
+}
 .gallery {
 	position: relative;
-	// top: 60px;
+	top: 20px;
 	z-index: 0;
 
 	margin-top: 60px;
@@ -72,7 +75,7 @@
 
 
 .images {
-
+	margin-top: 70px;
 	position: relative;
 	z-index: 2;
 	transform: rotate(-0.5deg);
@@ -82,6 +85,7 @@
 	div {
 	// background-color: red;
 	padding-left: 30px;
+
 	}
 }
 
@@ -100,6 +104,8 @@
 }
 
 li {
+
+	margin-top: 92px;
 
 
 transform: rotate(1deg);
@@ -165,6 +171,22 @@ h3 {
 }
 
 
+//birds
+
+.camera {
+	position: absolute;
+	top: 0;
+	z-index: 5;
+	left: 90px;
+}
+
+.regbird {
+	position: absolute;
+	top: 25px;
+	z-index: 5;
+	right: 150px;
+}
+
 @media screen and (max-width: 970px) {
 .total{
 
@@ -196,12 +218,23 @@ h3 {
 
 .colored:first-of-type {
 	// padding: 20px;
+	margin-top: 20px;
 	padding-bottom: 120px;
 	background-color: rgba(240,232,138,0.20);
 	// box-shadow: inset 15px;
 	box-shadow: inset 0px -20px 14px -6px rgba(33,178,233,0.8);
 	// box-shadow: 1px 1px 50px rgba(255,0,0,.1);
 	// mix-blend-mode: multiply;
+}
+
+.camera {
+	top: 0.5vw;;
+	left: 16vw;
+}
+
+.regbird {
+	top: 3.5vw;;
+	right: 20vw;
 }
 
 .vlak {
@@ -246,6 +279,11 @@ h3 {
 @media screen and (max-width: 768px) {
 img.move {
 	margin-left: 7vw;
+}
+
+.camera {
+	left: 40vw;
+	top: 0.7vw;
 }
 
 
@@ -299,10 +337,20 @@ transform: rotate(0deg);
 	}
 }
 }
+@media screen and (max-width: 650px) {
 
+.camera {
+	left: 36vw;;
+	top: 0.4vw;
+}
+}
 
 @media screen and (max-width: 550px) {
 
+.camera {
+	// left: 4000vw;;
+	top: 0.02vw;
+}
 
 img.move {
 	// margin-left: 8vw;
@@ -355,6 +403,10 @@ img.move {
 }
 @media screen and (max-width: 400px) {
 
+.camera {
+	left: 32vw;;
+	top: -3px;
+}
 .total {
 
 
