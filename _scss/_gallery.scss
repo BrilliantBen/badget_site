@@ -60,8 +60,109 @@
 
 	}
 
+.colored:first-of-type {
+	// padding: 20px;
+	padding-bottom: 120px;
+
+	// box-shadow: 1px 1px 50px rgba(255,0,0,.1);
+	// mix-blend-mode: multiply;
+}
 
 
+
+
+.images {
+
+	position: relative;
+	z-index: 2;
+	transform: rotate(-0.5deg);
+	// background-color: red;
+	// padding-left: 10px;
+@include clearfix;
+	div {
+	// background-color: red;
+	padding-left: 30px;
+	}
+}
+
+.measure {
+	position: absolute;
+	top: 0;
+
+	// border: 1px solid red;
+	@include clearfix;
+}
+
+.scale {
+	transform-origin: center;
+	transform: scale(0.9,0.8);
+
+}
+
+li {
+
+
+transform: rotate(1deg);
+	&:first-child {
+		position: relative;
+			transform: rotate(-1deg);
+	}
+
+	&:last-child{
+		position: relative;
+		// left: 200px;
+		transform: rotate(-1deg);
+
+	}
+}
+
+.move {
+
+}
+
+img.move {
+	margin-left: 50px;
+}
+
+.frst{
+	// background-color: yellow;
+	// position: relative;
+	li {
+		// position: relative;
+	}
+
+	h2 {
+		// position: absolute;
+		// left: 0;
+	}
+}
+
+h3 {
+	// position: relative;
+	// top: 20px;;
+}
+
+//txt
+
+.txt{
+	position: absolute;
+	// top: 0;
+	top: 220px;
+	font-size: 5em;
+	color: white;
+
+	left: 140px;
+
+
+
+	&:nth-child(2){
+		left: 410px;
+	}
+
+	&:last-child {
+	left: 710px;
+	}
+}
 
 
 @media screen and (max-width: 970px) {
@@ -82,7 +183,73 @@
 	}
 }
 
+
+@media screen and (max-width: 960px) {
+.colored:last-of-type {
+	// padding: 20px;
+	background-color: rgba(240,232,138,0.20);
+	// box-shadow: inset 15px;
+	box-shadow: inset 0px 20px 14px -6px rgba(33,178,233,0.8);
+	// box-shadow: 1px 1px 50px rgba(255,0,0,.1);
+	// mix-blend-mode: multiply;
+}
+
+.colored:first-of-type {
+	// padding: 20px;
+	padding-bottom: 120px;
+	background-color: rgba(240,232,138,0.20);
+	// box-shadow: inset 15px;
+	box-shadow: inset 0px -20px 14px -6px rgba(33,178,233,0.8);
+	// box-shadow: 1px 1px 50px rgba(255,0,0,.1);
+	// mix-blend-mode: multiply;
+}
+
+.vlak {
+	background: none;
+	position: static;
+	width: 0;
+	height: 0;
+}
+.c-3, .k-3  {
+	display: none;
+}
+
+.images {
+
+
+	div {
+	// background-color: red;
+	padding-left: 0;
+	}
+}
+
+.txt{
+	position: absolute;
+	// top: 0;
+	top: 40vw;
+	font-size: 5em;
+	color: white;
+
+	// left: 140px;
+
+
+
+	&:nth-child(2){
+		left: 65vw;
+	}
+
+
+}
+}
+
+
 @media screen and (max-width: 768px) {
+img.move {
+	margin-left: 7vw;
+}
+
+
+
 .total {
 	margin-left:0;
 	text-align: center;
@@ -101,7 +268,7 @@
 		}
 	}
 	.gallery {
-			margin-top: 20px;
+			// margin-top: 20px;
 		transform: rotate(0deg);
 	}
 
@@ -122,10 +289,25 @@ margin-top: 60px;
 		left:-16vw;
 		z-index: 2;
 	}
+
+	.images {
+		// border: 1px solid red;
+transform: rotate(0deg);
+	div {
+	// background-color: red;
+	// padding-left: -50px;
+	}
+}
 }
 
 
 @media screen and (max-width: 550px) {
+
+
+img.move {
+	// margin-left: 8vw;
+}
+
 .total {
 
 	display: inline;
@@ -147,8 +329,32 @@ margin-top: 60px;
 		left:-16vw;
 	}
 }
+@media screen and (max-width: 520px) {
+	img.move {
+	margin-left: 9.5vw;
+}
+.colored:last-of-type {
+	// padding: 20px;
+	background-color: rgba(240,232,138,0.3);
+	// box-shadow: inset 15px;
+	box-shadow: inset 0px 20px 14px -6px rgba(33,178,233,0.9);
+	// box-shadow: 1px 1px 50px rgba(255,0,0,.1);
+	// mix-blend-mode: multiply;
+}
 
+.colored:first-of-type {
+	// padding: 20px;
+	padding-bottom: 120px;
+	background-color: rgba(240,232,138,0.3);
+	// box-shadow: inset 15px;
+	box-shadow: inset 0px -20px 14px -6px rgba(33,178,233,0.9);
+	// box-shadow: 1px 1px 50px rgba(255,0,0,.1);
+	// mix-blend-mode: multiply;
+}
+
+}
 @media screen and (max-width: 400px) {
+
 .total {
 
 
@@ -162,62 +368,16 @@ margin-top: 60px;
 
 }
 
-ul.row {
 
-}
 li {
-	border:1px solid red;
+	// border:1px solid red;
 	@include clearfix;
 }
 .frame {
-
+	// border:1px solid red;
 		// left:-15vw;
 	}
 }
 
-.images {
-	position: relative;
-	z-index: 2;
-
-	div {
-
-	}
-}
-
-.measure {
-	position: absolute;
-	top: 0;
-	border: 1px solid red;
-	@include clearfix;
-}
-
-.scale {
-	transform-origin: center;
-	transform: scale(0.9,0.8);
-
-}
-
-li {
-
-
-transform: rotate(1deg);
-	&:first-child {
-			transform: rotate(-1deg);
-	}
-
-	&:last-child{
-		position: relative;
-		// left: 200px;
-		transform: rotate(-1deg);
-	}
-}
-
-.move {
-
-}
-
-img.move {
-	margin-left: 50px;
-}
 
 

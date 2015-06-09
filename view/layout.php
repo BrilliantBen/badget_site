@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/screen.css"/>
 	<script src="js/vendor/picturefill/picturefill.min.js" async></script>
 
+
 		<script>
 		WebFontConfig = {
 			custom: {
@@ -30,6 +31,7 @@
     <body>
 
         <div class="container-fluid">
+        	<div class="vlak"></div>
             <?php echo $content; ?>
         </div>
 

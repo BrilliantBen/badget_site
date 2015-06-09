@@ -6,6 +6,7 @@
 			<picture class="ab">
 				<source media="(max-width: 500px)" srcset="assets/header/leaves_small.png">
 				<source media="(max-width: 768px)" srcset="assets/header/leaves_750.png">
+				<source media="(min-width: 768px)" srcset="assets/header/leaves.png">
 				<img src="assets/header/leaves.png" alt="leaves" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			</picture>
 
@@ -27,16 +28,19 @@
 				<picture>
 					<source media="(max-width: 600px)" srcset="assets/header/header_mdsm.png">
 					<source media="(max-width: 768px)" srcset="assets/header/header_md.png">
+					<source media="(min-width: 768px)" srcset="assets/header/header_lg.png">
 					<img src="assets/header/header_lg.png" alt="Love live & Experience the joy" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				</picture>
 
 				<picture class="birds">
 					<source media="(max-width: 780px)" srcset="assets/header/nbird_small.png">
+					<source media="(min-width: 780px)" srcset="assets/header/nbird.png">
 					<img src="assets/header/nbird.png" alt="bird" class="">
 				</picture>
 
 				<picture class="birdsleft">
 					<source media="(max-width: 780px)" srcset="assets/header/fbirds_small.png">
+					<source media="(min-width: 780px)" srcset="assets/header/fbird.png">
 					<img src="assets/header/fbird.png" alt="birds" class="">
 				</picture>
 
@@ -89,18 +93,18 @@
 		</div>
 	</section>
 
+			<picture class="div">
+				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
+				<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
+				<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
+				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-lg-12">
+			</picture>
 
-		<section class="row gallery">
+		<section class="row gallery colored">
 
 			<header class="hidden">
 				<h1>Live smiles spread love</h1>
 			</header>
-
-			<picture class="div">
-				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
-				<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
-				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-lg-12">
-			</picture>
 
 
 			<article class="gall col-xs-12 col-sm-7 col-md-7 col-lg-7">
@@ -108,6 +112,7 @@
 				<header>
 					<picture class="">
 						<source media="(max-width: 500px)" srcset="assets/gallery/header_small.png">
+						<source media="(min-width: 500px)" srcset="assets/gallery/title_large.png">
 						<!-- <source media="(max-width: 768px)" srcset="assets/gallery/divider.png"> -->
 						<img src="assets/gallery/title_large.png" alt="Live smiles spread love" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					</picture>
@@ -131,6 +136,7 @@
 					<picture class="">
 						<!-- <source media="(max-width: 500px)" srcset="assets/gallery/divider.png"> -->
 						<source media="(max-width: 550px)" srcset="assets/gallery/border.png">
+						<source media="(min-width: 550px)" srcset="assets/gallery/total.png">
 						<img src="assets/gallery/total.png" alt="smiles" class="frame col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0  col-md-12 col-md-offset-0  col-lg-12 col-lg-offset-0 ">
 					</picture>
 
@@ -140,77 +146,69 @@
 
 		</section>
 
-		<div class="row images">
+		<div class="row images colored">
 
- <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-12 col-sm-offset-1 col-lg-12 col-lg-offset-0">
-      <?php
-        if (!empty($images)) {?>
-           <ul class="row">
-            <?php foreach ($images as $image){ ?>
-                <li class="" id="image-1123">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-sm-offset-0 col-lg-12 col-lg-offset-0 gone">
+			    <?php
+			    	$class = 0;
+			        if (!empty($images)) {?>
+			    	    <ul class="row frst">
+				            <?php foreach ($images as $image){ ?>
 
+				            <?php $class++; ?>
+				                <li class="c-<?php echo $class ?>" id="image-1123">
 
+									<picture class="">
+										<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
+										<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
+										<img src="assets/gallery/frame.png" alt="divider" class="move col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
 
+									</picture>
 
-			<picture class="">
-				<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
-				<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
-				<img src="assets/gallery/frame.png" alt="divider" class="move col-xs-10 col-xs-offset-1 col-sm-6 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
-			</picture>
+				                </li>
+								<!-- <li>test</li> -->
+								<!-- dwddww -->
+								<h3 class="c-<?php echo $class ?> txt col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">dddd</h3>
+				            <?php } ?>
+			        	</ul>
+			        <?php }else{
 
+			            echo "<p> no images yet </p>";
 
+			        }?>
 
+			    </div>
 
-                </li>
-            <?php } ?>
-           </ul>
-        <?php }else{
-               echo "<p> no images yet </p>";
-        }?>
+			    <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-sm-offset-0 col-lg-12 col-lg-offset-0 measure gone">
+			    	<?php
+			    		$otherclass = 0;
+				        if (!empty($images)) {?>
+				           <ul class="row ">
+				            <?php foreach ($images as $image){ ?>
+				              <?php $otherclass++; ?>
+				           		<li class="move c-<?php echo $otherclass ?>" id="image-1123">
 
-    </div>
+									<picture class="">
+										<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
+										<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
+										<img src="uploads/test.jpg" alt="divider" class="move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
+									</picture>
 
-    <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-12 col-sm-offset-1 col-lg-12 col-lg-offset-0 measure">
-      <?php
-        if (!empty($images)) {?>
-           <ul class="row">
-            <?php foreach ($images as $image){ ?>
-                <li class="move" id="image-1123">
+				                </li>
 
-
-
-
-			<picture class="">
-				<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
-				<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
-				<img src="uploads/test.jpg" alt="divider" class="move scale col-xs-10 col-xs-offset-1 col-sm-6 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
-			</picture>
-
-
-
-
-                </li>
-            <?php } ?>
-           </ul>
-        <?php }else{
-               echo "<p> no images yet </p>";
-        }?>
-
-    </div>
-
-</div>
-
-
-
-	<div class="patternAbove"></div>
-</div>
+				            <?php } ?>
+			           </ul>
+			       	<?php }else{
+		               echo "<p> no images yet </p>";
+			        }?>
+			    </div>
+			</div>
+			<div class="patternAbove"></div>
+		</div>
 
 
 
 
-</div>
-
-
-
+	</div>
 </div>
 <!-- col-xs-8 col-xs-offset-2 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 col-sm-6 col-md-6  -->
