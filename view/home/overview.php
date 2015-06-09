@@ -98,7 +98,7 @@
 				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
 				<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
 				<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
-				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-lg-12">
+				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
 			</picture>
 
 		<section class="row gallery colored">
@@ -137,7 +137,7 @@
 					<picture class="">
 						<!-- <source media="(max-width: 500px)" srcset="assets/gallery/divider.png"> -->
 						<source media="(max-width: 550px)" srcset="assets/gallery/border.png">
-						<source media="(max-width: 768px)" srcset="assets/gallery/frame_large.png">
+						<source media="(max-width: 768px)" srcset="assets/gallery/border_large.png">
 						<source media="(min-width: 768px)" srcset="assets/gallery/total.png">
 						<img src="assets/gallery/total.png" alt="smiles" class="frame col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0  col-md-12 col-md-offset-0  col-lg-12 col-lg-offset-0 ">
 					</picture>
@@ -150,18 +150,18 @@
 
 		<div class="row images colored">
 
-		<div class="camera">
-			<picture class="">
-						<img src="assets/gallery/camerabird.png" alt="shoot" class="">
-					</picture>
-		</div>
+			<div class="camera">
+				<picture class="">
+							<img src="assets/gallery/camerabird.png" alt="shoot" class="">
+						</picture>
+			</div>
 
 
-		<div class="regbird">
-			<picture class="">
-						<img src="assets/gallery/regbird.png" alt="regular" class="hidden-xs">
-					</picture>
-		</div>
+			<div class="regbird">
+				<picture class="">
+							<img src="assets/gallery/regbird.png" alt="regular" class="hidden-xs">
+						</picture>
+			</div>
 
 			<div class="blocks">
 			<picture class="one">
@@ -185,15 +185,20 @@
 
 									<picture class="">
 										<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
-										<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
+										<source media="(max-width: 500px)" srcset="assets/gallery/frame_large.png">
+										<source media="(max-width: 768px)" srcset="assets/gallery/frame_large.png">
+										<source media="(max-width: 960px)" srcset="assets/gallery/frame_medium.png">
+										<source media="(min-width: 960px)" srcset="assets/gallery/frame.png">
 										<img src="assets/gallery/frame.png" alt="divider" class="move col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
 
 									</picture>
 
+
+
 				                </li>
 								<!-- <li>test</li> -->
 								<!-- dwddww -->
-								<h3 class="c-<?php echo $class ?> txt col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">dddd</h3>
+								<h3 class="c-<?php echo $class ?> txt col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">   <?php echo $image['smiles']; ?> smiles</h3>
 				            <?php } ?>
 			        	</ul>
 			        <?php }else{
@@ -229,6 +234,25 @@
 			        }?>
 			    </div>
 			</div>
+			<picture class="">
+				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
+				<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
+				<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
+				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
+			</picture>
+
+
+			<section>
+				<header class="hidden">
+					<h1>Know more? Watch this video!</h1>
+				</header>
+
+
+			<article>
+
+				dw
+			</article>
+			</section>
 			<div class="patternAbove"></div>
 		</div>
 

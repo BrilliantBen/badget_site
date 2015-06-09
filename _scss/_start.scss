@@ -2,6 +2,7 @@
 
 body {
 position: relative;
+background-color: #35bdfb;
 	background-image: url('../assets/patterns/pattern.jpg');
 	font-size: 62.5%;
 	font-weight: normal;
@@ -88,9 +89,9 @@ header {
 .vlak {
 	// border: 1px solid red;
 	position: absolute;
-	height: 710px;
+	height: 800px;
 	width: 100%;
 	top: 1030px;
 	background-color: rgba(240,232,138,0.20);
-	box-shadow: inset 0px 20px 14px -6px rgba(33,178,233,0.8);
+	box-shadow: inset -1px 0px 26px 14px rgba(33,178,233,0.8);
 }
