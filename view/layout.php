@@ -20,7 +20,6 @@
 		(function() {
 			var wf = document.createElement('script');
 			wf.src = '//ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js';
-			// wf.src = 'js/vendor/webfontloader.min.js';
 			wf.type = 'text/javascript';
 			wf.async = 'true';
 			var s = document.getElementsByTagName('script')[0];

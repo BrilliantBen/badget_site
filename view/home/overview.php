@@ -4,11 +4,20 @@
 		<header class="col-md-12 col-lg-12">
 
 			<picture class="ab">
-				<source media="(max-width: 500px)" srcset="assets/header/leaves_small.png">
-				<source media="(max-width: 768px)" srcset="assets/header/leaves_750.png">
-				<source media="(min-width: 768px)" srcset="assets/header/leaves.png">
-				<img src="assets/header/leaves.png" alt="leaves" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			</picture>
+				    <source
+				        data-srcset="assets/header/leaves_small.png"
+				        media="(max-width: 500px)" />
+				    <source
+				        data-srcset="assets/header/leaves_750.png"
+				        media="(max-width: 768px)" />
+				    <source
+				        data-srcset="assets/header/leaves.png"
+						media="(min-width: 768px)" />
+				    <img
+				        src="assets/header/leaves.png"
+				       	class="lazyload col-xs-12 col-sm-12 col-md-12 col-lg-12"
+				        alt="Leaves" />
+				</picture>
 
 			<div class="headers">
 
@@ -25,22 +34,45 @@
 				</div>
 
 				<picture>
-					<source media="(max-width: 600px)" srcset="assets/header/header_mdsm.png">
-					<source media="(max-width: 768px)" srcset="assets/header/header_md.png">
-					<source media="(min-width: 768px)" srcset="assets/header/header_lg.png">
-					<img src="assets/header/header_lg.png" alt="Love live & Experience the joy" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				    <source
+				        data-srcset="assets/header/header_mdsm.png"
+				        media="(max-width: 600px)" />
+				    <source
+				        data-srcset="assets/header/header_md.png"
+				        media="(max-width: 768px)" />
+				    <source
+				        data-srcset="assets/header/header_lg.png"
+						media="(min-width: 768px)" />
+				    <img
+				        src="assets/header/header_lg.png"
+				       	class="lazyload col-xs-12 col-sm-12 col-md-12 col-lg-12"
+				        alt="Love live & experience the joy" />
 				</picture>
 
 				<picture class="birds">
-					<source media="(max-width: 780px)" srcset="assets/header/nbird_small.png">
-					<source media="(min-width: 780px)" srcset="assets/header/nbird.png">
-					<img src="assets/header/nbird.png" alt="bird" class="">
+				    <source
+				        data-srcset="assets/header/nbird_small.png"
+				        media="(max-width: 780px)" />
+				    <source
+				        data-srcset="assets/header/nbird.png"
+						media="(min-width: 780px)" />
+				    <img
+				        src="assets/header/nbird.png"
+				       	class="lazyload"
+				        alt="bird" />
 				</picture>
 
 				<picture class="birdsleft">
-					<source media="(max-width: 780px)" srcset="assets/header/fbirds_small.png">
-					<source media="(min-width: 780px)" srcset="assets/header/fbird.png">
-					<img src="assets/header/fbird.png" alt="birds" class="">
+				    <source
+				        data-srcset="assets/header/fbirds_small.png"
+				        media="(max-width: 780px)" />
+				    <source
+				        data-srcset="assets/header/fbird.png"
+						media="(min-width: 780px)" />
+				    <img
+				        src="assets/header/fbird.png"
+				       	class="lazyload"
+				        alt="fbirds" />
 				</picture>
 
 			</div>
@@ -96,10 +128,19 @@
 	</section>
 
 	<picture class="div">
-		<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
-		<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
-		<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
-		<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
+		<source
+			data-srcset="assets/gallery/div_small.png"
+			media="(max-width: 500px)" />
+		<source
+		    data-srcset="assets/gallery/div_small_lg.png"
+		    media="(max-width: 768px)" />
+		<source
+		    data-srcset="assets/gallery/divider.png"
+			media="(min-width: 768px)" />
+		<img
+		    src="assets/gallery/divider.png"
+		  	class="lazyload col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10"
+		    alt="divider" />
 	</picture>
 
 	<section class="row gallery colored">
@@ -111,10 +152,18 @@
 
 		<article class="gall col-xs-12 col-sm-7 col-md-7 col-lg-7">
 			<header>
-				<picture class="">
-					<source media="(max-width: 500px)" srcset="assets/gallery/header_small.png">
-					<source media="(min-width: 500px)" srcset="assets/gallery/title_large.png">
-					<img src="assets/gallery/title_large.png" alt="Live smiles spread love" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+				<picture>
+					<source
+						data-srcset="assets/gallery/header_small.png"
+						media="(max-width: 500px)" />
+					<source
+					    data-srcset="assets/gallery/title_large.png"
+						media="(min-width: 500px)" />
+					<img
+					    src="assets/gallery/title_large.png"
+					  	class="lazyload col-xs-12 col-sm-12 col-md-12 col-lg-12"
+					    alt="live smiles spread the love" />
 				</picture>
 			</header>
 
@@ -128,13 +177,23 @@
 				<?php printf("%04d", $number)?>
 			</p>
 
+				<picture>
+					<source
+						data-srcset="assets/gallery/border.png"
+						media="(max-width: 550px)" />
+					<source
+					    data-srcset="assets/gallery/border_large.png"
+					    media="(max-width: 768px)" />
+					<source
+					    data-srcset="assets/gallery/total.png"
+						media="(min-width: 768px)" />
+					<img
+					    src="assets/gallery/total.png"
+					  	class="lazyload frame col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0  col-md-12 col-md-offset-0  col-lg-12 col-lg-offset-0 "
+					    alt="smiles detected" />
+				</picture>
 
-			<picture class="">
-				<source media="(max-width: 550px)" srcset="assets/gallery/border.png">
-				<source media="(max-width: 768px)" srcset="assets/gallery/border_large.png">
-				<source media="(min-width: 768px)" srcset="assets/gallery/total.png">
-				<img src="assets/gallery/total.png" alt="smiles" class="frame col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0  col-md-12 col-md-offset-0  col-lg-12 col-lg-offset-0 ">
-			</picture>
+
 
 		</aside>
 	</section>
@@ -171,13 +230,24 @@
 					<?php $class++; ?>
 						<li class="c-<?php echo $class ?>" id="image-1123">
 
-							<picture class="">
-								<source media="(max-width: 500px)" srcset="assets/gallery/frame_large.png">
-								<source media="(max-width: 768px)" srcset="assets/gallery/frame_large.png">
-								<source media="(max-width: 960px)" srcset="assets/gallery/frame_medium.png">
-								<source media="(min-width: 960px)" srcset="assets/gallery/frame.png">
-								<img src="assets/gallery/frame.png" alt="divider" class="move col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
-							</picture>
+							<picture>
+								    <source
+								        data-srcset="assets/gallery/frame_large.png"
+								        media="(max-width: 500px)" />
+								    <source
+								        data-srcset="assets/gallery/frame_large.png"
+								        media="(max-width: 768px)" />
+								    <source
+								        data-srcset="assets/gallery/frame_medium.png"
+								        media="(max-width: 960px)" />
+								    <source
+								        data-srcset="assets/gallery/frame.png"
+										media="(min-width: 960px)" />
+								    <img
+								        src="assets/gallery/frame.png"
+								       class="lazyload move col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 "
+								        alt="frames" />
+								</picture>
 
 						</li>
 
@@ -201,6 +271,8 @@
 								<picture class="">
 									<img src="uploads/test.jpg" alt="divider" class="new move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
 								</picture>
+
+
 							</li>
 						<?php } ?>
 					</ul>
@@ -250,10 +322,21 @@
 </div>
 
 <div class="last">
-	<picture >
-		<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
-		<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
-		<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
-		<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
+
+	<picture>
+		<source
+			data-srcset="assets/gallery/div_small.png"
+			media="(max-width: 500px)" />
+		<source
+		    data-srcset="assets/gallery/div_small_lg.png"
+		    media="(max-width: 768px)" />
+		<source
+		    data-srcset="assets/gallery/divider.png"
+			media="(min-width: 768px)" />
+		<img
+		    src="assets/gallery/divider.png"
+		  	class="lazyload col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10"
+		    alt="divider" />
 	</picture>
+
 </div>
