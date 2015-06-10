@@ -6,21 +6,16 @@
 		'js/vendor/jquery/dist/jquery.min.js'
 		],
 
-		"_": [
-		'//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js',
-		'js/vendor/underscore/underscore-min.js'
-		],
-
-		Handlebars: [
-		'//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js',
-		'js/vendor/handlebars/handlebars.min.js'
+		lazy: [
+		'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/1.1.3-RC1/lazysizes.min.js',
+		'js/vendor/lazyload/lazysizes.min.js'
 		],
 
 		'app.js': 'js/src/app.js'
 	},{
 		shim: {
-
-			'app.js': ['jQuery']
+			lazy: ['jQuery'],
+			'app.js': ['lazy']
 		},
 		callback: function(success, failed) {
 			// console.log(success);

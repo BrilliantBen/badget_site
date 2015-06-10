@@ -35,8 +35,7 @@
         </div>
 
   	<script src="js/vendor/fallback/fallback.min.js"></script>
-  	<script src="js/vendor/lazyload/lazysizes.min.js"></script>
-	<script src="js/src/init.js"></script>
+	<script src="js/app.js"></script>
 
     </body>
 </html>

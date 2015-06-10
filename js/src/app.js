@@ -1,16 +1,27 @@
 (function() {
 
+
 	$.get("http://localhost/badget_site/api/pulse")
 		.done(function( respond ) {
 	})
 
 	.success( function ( respond ) {
+		pulse(respond);
+
+
+	})
+
+	.fail ( function ( respond ) {
+		console.log("fail");
+	});
+
+
+	function pulse(respond) {
+
+
 		var heartbeat = respond.maxPulse;
 		var variable = 0;
 
-		Number.prototype.map = function ( in_min , in_max , out_min , out_max ) {
-			return ( this - in_min ) * ( out_max - out_min ) / ( in_max - in_min ) + out_min;
-		};
 
 		var snelheid = heartbeat.map( 0 , 150 , 1.1 , 1.5 ) ;
 		variable = heartbeat.map( 0 , 240 , 0 , 0.4 ) ;
@@ -71,10 +82,13 @@
 				z = 0;
 			}
 		}
+	}
 
-	})
+	Number.prototype.map = function ( in_min , in_max , out_min , out_max ) {
+		return ( this - in_min ) * ( out_max - out_min ) / ( in_max - in_min ) + out_min;
+	};
 
-	.fail ( function ( respond ) {
-		console.log("fail");
-	});
+
 })();
+
+

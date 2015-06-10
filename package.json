@@ -1,5 +1,5 @@
 {
-  "name": "Komen",
+  "name": "MA4",
   "version": "1.0.0",
   "description": "Devine Major Aterlier 4",
   "main": "index.js",
@@ -27,8 +27,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "komen"
+    "MA4"
   ],
-  "author": "Benoit Schrijnemakers en Gilles Boom",
+  "author": "Benoit Schrijnemakers",
   "license": "ISC"
 }
