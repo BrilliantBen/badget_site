@@ -2,7 +2,6 @@
 
 	position: relative;
 	top: 159px;
-	// margin-bottom: 50px;
 
 	.flowb {
 		left:0;
@@ -46,7 +45,6 @@
 	}
 
 	aside {
-
 		position: relative;
 		top: -125px;
 
@@ -66,29 +64,25 @@
 		top: 17px;
 		z-index: 2;
 
-	&:hover {
+		&:hover {
 
-		.flowb {
+			.flowb {
 
-	position: absolute;
-	z-index: 1;
-	top: -10px;
-	left: 40px;
-	transform: rotate(-20deg);
-	transition: 1s;
-
-}
+				position: absolute;
+				z-index: 1;
+				top: -10px;
+				left: 40px;
+				transform: rotate(-20deg);
+				transition: 1s;
+			}
+		}
 	}
 
-	}
 	picture {
-
 		position: relative;
 		z-index: 2;
 		left: -270px;
 		top: -35px;
-
-
 	}
 
 	.logo {
@@ -100,22 +94,13 @@
 		// border: 1px solid red;
 		transform: rotate(-1.8deg);
 	}
-
 }
-
-
-
-
 
 //CNVS
 canvas {
-	   transform: rotate(-11deg);
+	transform: rotate(-11deg);
 	position: absolute;
 	z-index: 3;
 	top: 200px;
 	left: 73px;
 }
-
-
-
-

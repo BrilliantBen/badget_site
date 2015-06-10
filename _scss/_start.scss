@@ -1,93 +1,90 @@
 * { Box-sizing: Border-box }
 
 body {
-position: relative;
-background-color: #35bdfb;
+	position: relative;
+	background-color: #35bdfb;
 	background-image: url('../assets/patterns/pattern.jpg');
 	font-size: 62.5%;
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
-    font-smoothing: grayscale;
-    height: 100%;
-     margin: 0;
-    padding: 0
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+	font-smoothing: grayscale;
+	height: 100%;
+	margin: 0;
+	padding: 0
 
 }
 
 .containerfix {
 	max-width: 970px;
 	margin: 0 auto;
-   width: 100%;
-    overflow: hidden;
-    	// border:1px solid yellow;
+	width: 100%;
+	overflow: hidden;
 }
 
 section {
-	position: relative;
+   	position: relative;
 }
 
 .patternAbove{
 
-  background:url('../assets/patterns/overlaypattern.png');
-  width:100%;
-  height:100%;
-  position:absolute;
-  	// border:1px solid orange;
-  top:0;
-  left:0;
+ 	background:url('../assets/patterns/overlaypattern.png');
+  	width:100%;
+   	height:100%;
+   	position:absolute;
+  	top:0;
+  	left:0;
 }
 
 * html .patternAbove{
-  background:none;
-  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
-  src='pattern-above.png',sizingMethod='scale');
-}
+  	background:none;
+  	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='pattern-above.png',sizingMethod='scale');
+  }
 
 .ab {
-	position: absolute;
-	z-index: 2;
-}
+  	position: absolute;
+  	z-index: 2;
+  }
 
 .headers {
-	@include clearfix;
-	margin-left: 25px;
-	margin-top: 7px;
+  	@include clearfix;
+  	margin-left: 25px;
+  	margin-top: 7px;
 }
 
 header {
-	@include clearfix;
+  	@include clearfix;
 }
 
 .birds {
-	position: absolute;
-	bottom: 140px;
-	right: 75px;
-	z-index: 2;
+  	position: absolute;
+  	bottom: 140px;
+  	right: 75px;
+  	z-index: 2;
 
-	img {
-		width: 100%;
-	}
+  	img {
+  		width: 100%;
+ 	}
 }
 
 .birdsleft {
 	position: absolute;
-	bottom: 105px;
-	left: 64px;
-	z-index: 2;
+  	bottom: 105px;
+  	left: 64px;
+  	z-index: 2;
 
-	img {
-		width: 100%;
-	}
+  	img {
+  		width: 100%;
+  	}
 }
 
 .container-fluid {
-	padding: 0;
+  	padding: 0;
 }
 
 .vlak {
-	// border: 1px solid red;
 	position: absolute;
 	height: 800px;
 	width: 100%;
@@ -99,4 +96,8 @@ header {
 img {
 	-webkit-backface-visibility: hidden;
 }
+
+
+
+
 

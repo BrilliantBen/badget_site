@@ -10,21 +10,19 @@
 				<img src="assets/header/leaves.png" alt="leaves" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			</picture>
 
-
-
-
 			<div class="headers">
 
 
-			<div class="hidden">
-				<h1> Love live! </h1>
-				<h2> Experience the joy! </h2>
+				<div class="hidden">
+					<h1> Love live! </h1>
+					<h2> Experience the joy! </h2>
 
-				<aside>
-					<p>#pkp15</p>
-					<p><strong>Skynet</strong></p>
-				</aside>
-			</div>
+					<aside>
+						<p>#pkp15</p>
+						<p><strong>Skynet</strong></p>
+					</aside>
+
+				</div>
 
 				<picture>
 					<source media="(max-width: 600px)" srcset="assets/header/header_mdsm.png">
@@ -50,33 +48,35 @@
 	</section>
 
 	<section class="intro row">
+
 		<div class="keep col-xs-12  col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 
 			<article class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 
-				<header>
-					<picture class="logo">
-						<img src="assets/intro/cloud.png" alt="logo" class="">
-					</picture>
-					<h1>Live the moment</h1>
-				</header>
+					<header>
+						<picture class="logo">
+							<img src="assets/intro/cloud.png" alt="logo" class="">
+						</picture>
 
-				<p>
+						<h1>Live the moment</h1>
+					</header>
+
+					<p>
 					Are you one of those people who love festivals for <strong>more than</strong> just the <strong>music</strong>? Our app helps you increase the overall <strong>experience</strong>
 					by adding <strong>love</strong> to every moment of your day.
-				</p>
+					</p>
 
-				<a href="#">
+					<a href="#">
 
-					<picture>
-						<img src="assets/intro/buybutton.png" width="414" height="180" alt="Get in appstore!" class="">
-					</picture>
+						<picture>
+							<img src="assets/intro/buybutton.png" width="414" height="180" alt="Get in appstore!" class="">
+						</picture>
 
-					<picture class="flowb">
-						<img src="assets/intro/bird.png" alt="tweet" class="">
-					</picture>
+						<picture class="flowb">
+							<img src="assets/intro/bird.png" alt="tweet" class="">
+						</picture>
 
-				</a>
+					</a>
 
 			</article>
 
@@ -91,208 +91,169 @@
 				</picture>
 
 			</aside>
+
 		</div>
 	</section>
 
-			<picture class="div">
-				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
-				<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
-				<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
-				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
-			</picture>
+	<picture class="div">
+		<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
+		<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
+		<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
+		<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
+	</picture>
 
-		<section class="row gallery colored">
+	<section class="row gallery colored">
 
-			<header class="hidden">
-				<h1>Live smiles spread love</h1>
+		<header class="hidden">
+			<h1>Live smiles spread love</h1>
+		</header>
+
+
+		<article class="gall col-xs-12 col-sm-7 col-md-7 col-lg-7">
+			<header>
+				<picture class="">
+					<source media="(max-width: 500px)" srcset="assets/gallery/header_small.png">
+					<source media="(min-width: 500px)" srcset="assets/gallery/title_large.png">
+					<img src="assets/gallery/title_large.png" alt="Live smiles spread love" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				</picture>
 			</header>
 
+			<p>
+				Snap a pic and detect the number of smiles. <br> Check out the happiest of the bunch below.
+			</p>
+		</article>
 
-			<article class="gall col-xs-12 col-sm-7 col-md-7 col-lg-7">
-
-				<header>
-					<picture class="">
-						<source media="(max-width: 500px)" srcset="assets/gallery/header_small.png">
-						<source media="(min-width: 500px)" srcset="assets/gallery/title_large.png">
-						<!-- <source media="(max-width: 768px)" srcset="assets/gallery/divider.png"> -->
-						<img src="assets/gallery/title_large.png" alt="Live smiles spread love" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					</picture>
-				</header>
-
-				<p>
-					Snap a pic and detect the number of smiles. <br> Check out the happiest of the bunch below.
-				</p>
+		<aside class="total col-xs-10 cols-xs-offset-1 col-sm-5 col-md-5 col-lg-5">
+			<p class="number">
+				<?php printf("%04d", $number)?>
+			</p>
 
 
-
-			</article>
-
-			<aside class="total col-xs-10 cols-xs-offset-1 col-sm-5 col-md-5 col-lg-5">
-				<p class="number">
-				<?php printf("%04d", $number)
-				?>
-				</p>
-
-
-					<picture class="">
-						<!-- <source media="(max-width: 500px)" srcset="assets/gallery/divider.png"> -->
-						<source media="(max-width: 550px)" srcset="assets/gallery/border.png">
-						<source media="(max-width: 768px)" srcset="assets/gallery/border_large.png">
-						<source media="(min-width: 768px)" srcset="assets/gallery/total.png">
-						<img src="assets/gallery/total.png" alt="smiles" class="frame col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0  col-md-12 col-md-offset-0  col-lg-12 col-lg-offset-0 ">
-					</picture>
-
-			</aside>
-
-
-
-		</section>
-
-		<div class="row images colored">
-
-			<div class="camera">
-				<picture class="">
-							<img src="assets/gallery/camerabird.png" alt="shoot" class="">
-						</picture>
-			</div>
-
-
-			<div class="regbird">
-				<picture class="">
-							<img src="assets/gallery/regbird.png" alt="regular" class="hidden-xs">
-						</picture>
-			</div>
-
-			<div class="blocks">
-			<picture class="one">
-						<img src="assets/gallery/blocks.jpg" alt="regular" class="hidden-xs hidden-sm hidden-md">
-					</picture>
-
-					<picture class="two">
-						<img src="assets/gallery/blocks.jpg" alt="regular" class="hidden-xs hidden-sm hidden-md">
-					</picture>
-		</div>
-
-			<div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-sm-offset-0 col-lg-12 col-lg-offset-0 gone">
-			    <?php
-			    	$class = 0;
-			        if (!empty($images)) {?>
-			    	    <ul class="row frst">
-				            <?php foreach ($images as $image){ ?>
-
-				            <?php $class++; ?>
-				                <li class="c-<?php echo $class ?>" id="image-1123">
-
-									<picture class="">
-										<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
-										<source media="(max-width: 500px)" srcset="assets/gallery/frame_large.png">
-										<source media="(max-width: 768px)" srcset="assets/gallery/frame_large.png">
-										<source media="(max-width: 960px)" srcset="assets/gallery/frame_medium.png">
-										<source media="(min-width: 960px)" srcset="assets/gallery/frame.png">
-										<img src="assets/gallery/frame.png" alt="divider" class="move col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
-
-									</picture>
-
-
-
-				                </li>
-								<!-- <li>test</li> -->
-								<!-- dwddww -->
-								<h3 class="c-<?php echo $class ?> txt col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">   <?php echo $image['smiles']; ?> smiles</h3>
-				            <?php } ?>
-			        	</ul>
-			        <?php }else{
-
-			            echo "<p> no images yet </p>";
-
-			        }?>
-
-			    </div>
-
-			    <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-sm-offset-0 col-lg-12 col-lg-offset-0 measure gone">
-			    	<?php
-			    		$otherclass = 0;
-				        if (!empty($images)) {?>
-				           <ul class="row ">
-				            <?php foreach ($images as $image){ ?>
-
-				              <?php $otherclass++; ?>
-				           		<li class="move k-<?php echo $otherclass ?>" id="image-1123" data="<?php echo $image['created'] ?>" >
-
-									<picture class="">
-										<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
-										<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
-										<img src="uploads/test.jpg" alt="divider" class="new move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
-									</picture>
-
-
-				                </li>
-
-				            <?php } ?>
-			           </ul>
-			       	<?php }else{
-		               echo "<p> no images yet </p>";
-			        }?>
-			    </div>
-
-
-
-			</div>
 			<picture class="">
-				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
-				<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
-				<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
-				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
+				<source media="(max-width: 550px)" srcset="assets/gallery/border.png">
+				<source media="(max-width: 768px)" srcset="assets/gallery/border_large.png">
+				<source media="(min-width: 768px)" srcset="assets/gallery/total.png">
+				<img src="assets/gallery/total.png" alt="smiles" class="frame col-xs-8 col-xs-offset-4 col-sm-12 col-sm-offset-0  col-md-12 col-md-offset-0  col-lg-12 col-lg-offset-0 ">
 			</picture>
 
+		</aside>
+	</section>
 
-			<section class="video">
-				<header class="hidden">
-					<h1>Know more? Watch this video!</h1>
-				</header>
+	<div class="row images colored">
+		<div class="camera">
+			<picture class="">
+				<img src="assets/gallery/camerabird.png" alt="shoot" class="">
+			</picture>
+		</div>
+
+		<div class="regbird">
+			<picture class="">
+				<img src="assets/gallery/regbird.png" alt="regular" class="hidden-xs">
+			</picture>
+		</div>
+
+		<div class="blocks">
+			<picture class="one">
+				<img src="assets/gallery/blocks.jpg" alt="regular" class="hidden-xs hidden-sm hidden-md">
+			</picture>
+
+			<picture class="two">
+				<img src="assets/gallery/blocks.jpg" alt="regular" class="hidden-xs hidden-sm hidden-md">
+			</picture>
+		</div>
+
+		<div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-sm-offset-0 col-lg-12 col-lg-offset-0 gone">
+			<?php $class = 0;
+			if (!empty($images)) {?>
+				<ul class="row frst">
+					<?php foreach ($images as $image){ ?>
+
+					<?php $class++; ?>
+						<li class="c-<?php echo $class ?>" id="image-1123">
+
+							<picture class="">
+								<source media="(max-width: 500px)" srcset="assets/gallery/frame_large.png">
+								<source media="(max-width: 768px)" srcset="assets/gallery/frame_large.png">
+								<source media="(max-width: 960px)" srcset="assets/gallery/frame_medium.png">
+								<source media="(min-width: 960px)" srcset="assets/gallery/frame.png">
+								<img src="assets/gallery/frame.png" alt="divider" class="move col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
+							</picture>
+
+						</li>
+
+						<h3 class="c-<?php echo $class ?> txt col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">   <?php echo $image['smiles']; ?> smiles</h3>
+					<?php } ?>
+				</ul>
+				<?php }else{
+				echo "<p> no images yet </p>";
+			}?>
+		</div>
+
+		<div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-12 col-sm-offset-0 col-lg-12 col-lg-offset-0 measure gone">
+			<?php $otherclass = 0;
+				if (!empty($images)) {?>
+					<ul class="row ">
+						<?php foreach ($images as $image){ ?>
+
+						<?php $otherclass++; ?>
+							<li class="move k-<?php echo $otherclass ?>" id="image-1123" data="<?php echo $image['created'] ?>" >
+
+								<picture class="">
+									<img src="uploads/test.jpg" alt="divider" class="new move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
+								</picture>
+							</li>
+						<?php } ?>
+					</ul>
+			<?php }else{
+				echo "<p> no images yet </p>";
+			}?>
+		</div>
+	</div>
+
+	<picture class="">
+		<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
+		<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
+		<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
+		<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
+	</picture>
 
 
-			<article class="row">
+	<section class="video">
+		<header class="hidden">
+			<h1>Know more? Watch this video!</h1>
+		</header>
 
+		<article class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  ">
 				<picture class="top">
-
 					<img src="assets/video/frame.png" alt="divider" class="hidden-xs col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-10 col-md-10 col-lg-10">
 				</picture>
 
-
 				<div class="actv">
-				<video controls src="assets/video/main.mp4" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2"></video>
+					<video controls src="assets/video/main.mp4" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2"></video>
 				</div>
 			</div>
-			</article>
+		</article>
 
 		<div>
 			<aside class="buy col-lg-10  col-md-10  col-sm-10  col-xs-12 col-xs-offset-0 ">
-					<a href="#">
-
+				<a href="#">
 					<picture>
 						<img src="assets/intro/buybutton.png" width="414" height="180" alt="Get in appstore!" class="but ">
 					</picture>
-
-
 				</a>
 			</aside>
-			</div>
-			</section>
-			<div class="patternAbove"></div>
 		</div>
+	</section>
+
+	<div class="patternAbove"></div>
+</div>
 
 <div class="last">
-<picture >
-				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
-				<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
-				<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
-				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
-			</picture>
+	<picture >
+		<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
+		<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
+		<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
+		<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
+	</picture>
 </div>
-
-	</div>
-	<!-- col-lg-offset-2 col-md-offset-2 col-sm-offset-1 -->
-</div>
-<!-- col-xs-8 col-xs-offset-2 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 col-sm-6 col-md-6  -->
