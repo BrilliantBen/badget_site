@@ -95,3 +95,8 @@ header {
 	background-color: rgba(240,232,138,0.20);
 	box-shadow: inset -1px 0px 26px 14px rgba(33,178,233,0.8);
 }
+
+img {
+	-webkit-backface-visibility: hidden;
+}
+

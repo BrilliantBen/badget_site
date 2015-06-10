@@ -215,13 +215,14 @@
 				        if (!empty($images)) {?>
 				           <ul class="row ">
 				            <?php foreach ($images as $image){ ?>
+
 				              <?php $otherclass++; ?>
-				           		<li class="move k-<?php echo $otherclass ?>" id="image-1123">
+				           		<li class="move k-<?php echo $otherclass ?>" id="image-1123" data="<?php echo $image['created'] ?>" >
 
 									<picture class="">
 										<!-- <source media="(max-width: 500px)" srcset="assets/gallery/div_small.png"> -->
 										<!-- <source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png"> -->
-										<img src="uploads/test.jpg" alt="divider" class="move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
+										<img src="uploads/test.jpg" alt="divider" class="new move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
 									</picture>
 
 
@@ -233,6 +234,9 @@
 		               echo "<p> no images yet </p>";
 			        }?>
 			    </div>
+
+
+
 			</div>
 			<picture class="">
 				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
@@ -279,8 +283,14 @@
 			<div class="patternAbove"></div>
 		</div>
 
-
-
+<div class="last">
+<picture >
+				<source media="(max-width: 500px)" srcset="assets/gallery/div_small.png">
+				<source media="(max-width: 768px)" srcset="assets/gallery/div_small_lg.png">
+				<source media="(min-width: 768px)" srcset="assets/gallery/divider.png">
+				<img src="assets/gallery/divider.png" alt="divider" class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-10 col-lg-10">
+			</picture>
+</div>
 
 	</div>
 	<!-- col-lg-offset-2 col-md-offset-2 col-sm-offset-1 -->
