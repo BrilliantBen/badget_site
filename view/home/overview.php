@@ -297,12 +297,16 @@
 
 		<article class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  ">
-				<picture class="top">
-					<img src="assets/video/frame.png" alt="divider" class="hidden-xs col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-10 col-md-10 col-lg-10">
+				<picture class="top ">
+					<img src="assets/video/frame.png" alt="divider" class="click hidden-xs col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-10 col-md-10 col-lg-10">
 				</picture>
 
 				<div class="actv">
-					<video controls src="assets/video/main.mp4" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2"></video>
+				<video data-poster="assets/test.png" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2">
+				  <source data-src="assets/video/main.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' class="vidme">
+				  <!-- <source data-src="/assets/video/main.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
+				</video>
+					<!-- <video controls src="assets/video/main.mp4" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2"></video> -->
 				</div>
 			</div>
 		</article>

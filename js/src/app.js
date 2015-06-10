@@ -1,5 +1,8 @@
 (function() {
 
+	Number.prototype.map = function ( in_min , in_max , out_min , out_max ) {
+		return ( this - in_min ) * ( out_max - out_min ) / ( in_max - in_min ) + out_min;
+	};
 
 	$.get("http://localhost/badget_site/api/pulse")
 		.done(function( respond ) {
@@ -84,10 +87,31 @@
 		}
 	}
 
-	Number.prototype.map = function ( in_min , in_max , out_min , out_max ) {
-		return ( this - in_min ) * ( out_max - out_min ) / ( in_max - in_min ) + out_min;
-	};
 
+	$($('.click')[0]).click(function(e) {
+		e.preventDefault();
+		if($("video").get(0).paused){
+			$("video").get(0).play();
+
+		}
+		else{
+			$("video").get(0).pause();
+
+		}
+
+	});
+
+		$($('video')[0]).click(function(e) {
+		e.preventDefault();
+		if($("video").get(0).paused){
+			$("video").get(0).play();
+
+		}
+		else{
+			$("video").get(0).pause();
+
+		}
+	});
 
 })();
 

@@ -624,6 +624,35 @@ a {
 	}
 }
 
+@media screen and (max-width: 350px) {
+	.txt{
+		position: absolute;
+		font-family: eveleth;
+		top: 102vw;
+		font-size: 6vw;
+		color: #fafa17;
+		left: 17vw;
+		transform: rotate(-1.5deg);
+		background-position:-13vw 1.7vw;
+
+		&:nth-child(2){
+			top: 205vw;
+			left: 16vw;
+		}
+	}
+
+	.total {
+
+		.number {
+			top: 13px;
+		}
+	}
+
+	li {
+		@include clearfix;
+	}
+}
+
 
 
 
