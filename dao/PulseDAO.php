@@ -6,7 +6,7 @@ class PulseDAO extends DAO {
 
   public function selectAll() {
     $sql = "SELECT *
-    		FROM `MA4_pulse`";
+    		FROM `MA4_beats`";
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -15,7 +15,7 @@ class PulseDAO extends DAO {
 	public function selectByConcert($concert) {
 		$concert = "%#".$concert."%";
 		$sql = "SELECT *
-						FROM `MA4_pulse`
+						FROM `MA4_beats`
 						WHERE `concert` LIKE :concert";
 		$stmt = $this->pdo->prepare($sql);
 		$stmt->bindValue(':concert', $concert);
@@ -29,7 +29,7 @@ class PulseDAO extends DAO {
 
 
   public function selectHighest() {
-    $sql = "SELECT MAX(pulse) AS maxPulse FROM `MA4_pulse`";
+    $sql = "SELECT MAX(pulse) AS maxPulse FROM `MA4_beats`";
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetch(PDO::FETCH_ASSOC);

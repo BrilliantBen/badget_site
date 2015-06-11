@@ -1,7 +1,7 @@
 <?php
 class DAO {
 	private static $dbHost = "localhost";
-	private static $dbName = "badget";
+	private static $dbName = "badgetNew";
 	private static $dbUser = "badgetuser";
 	private static $dbPass = "badgetpass";
 	private static $sharedPDO;

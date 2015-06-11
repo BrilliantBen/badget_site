@@ -264,13 +264,30 @@
 				if (!empty($images)) {?>
 					<ul class="row ">
 						<?php foreach ($images as $image){ ?>
-
 						<?php $otherclass++; ?>
 							<li class="move k-<?php echo $otherclass ?>" id="image-1123" data="<?php echo $image['created'] ?>" >
 
-								<picture class="">
+								<!-- <picture class="">
 									<img src="uploads/test.jpg" alt="divider" class="new move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
+								</picture> -->
+
+								<picture>
+									<source
+										data-srcset="uploads/small/<?php echo $image['image'] ?>"
+										media="(max-width: 400px)" />
+									<source
+									    data-srcset="uploads/large/<?php echo $image['image'] ?>"
+									    media="(max-width: 768px)" />
+									<source
+									    data-srcset="uploads/small/<?php echo $image['image'] ?>"
+										media="(min-width: 768px)" />
+									<img
+									    src="uploads/small/<?php echo $image['image'] ?>"
+									  	class="lazyload new move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 "
+									    alt="image" />
 								</picture>
+
+
 
 
 							</li>
@@ -317,6 +334,8 @@
 					<picture>
 						<img src="assets/intro/buybutton.png" width="414" height="180" alt="Get in appstore!" class="but ">
 					</picture>
+
+
 				</a>
 			</aside>
 		</div>
