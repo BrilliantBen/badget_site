@@ -319,7 +319,7 @@
 				</picture>
 
 				<div class="actv">
-				<video data-poster="assets/test.png" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2">
+				<video data-poster="assets/video/poster.jpg" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2">
 				  <source data-src="assets/video/main.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' class="vidme">
 				  <!-- <source data-src="/assets/video/main.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
 				</video>

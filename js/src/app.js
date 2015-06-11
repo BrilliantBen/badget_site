@@ -113,6 +113,10 @@
 		}
 	});
 
+	$('video').show().trigger("play").bind('ended', function () {
+    	this.currentTime = 0;
+	});
+
 })();
 
 
