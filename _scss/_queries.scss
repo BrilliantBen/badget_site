@@ -108,14 +108,16 @@
 		top: 52vw;
 		font-size: 4vw;
 		color: #fafa17;
-		left: 15vw;
+		left: 63vw;
+		transform: rotate(1.1deg);
 		transform: rotate(-1.5deg);
 		background-position: 0.3vw 2.5vw;
 
 
 		&:nth-child(2){
-			left: 63vw;
-			transform: rotate(1.1deg);
+			left: 15vw;
+			transform: rotate(-1.5deg);
+
 		}
 	}
 }
@@ -219,11 +221,13 @@
 		font-size: 6vw;
 		color: #fafa17;
 		left: 18vw;
+		top: 166vw;
+		left: 18vw;
 		transform: rotate(-1.5deg);
 		background-position: 3vw 4vw;
 
 		&:nth-child(2){
-			top: 166vw;
+			top: 80vw;
 			left: 18vw;
 		}
 	}
@@ -383,16 +387,16 @@ canvas {
 	.txt{
 		position: absolute;
 		font-family: eveleth;
-		top: 84vw;
 		font-size: 6vw;
 		color: #fafa17;
+		top: 172vw;
 		left: 18vw;
 		transform: rotate(-1.5deg);
 		background-position: 3vw 3.5vw;
 
 		&:nth-child(2){
-			top: 172vw;
-			left: 18vw;
+		top: 84vw;
+		left: 18vw;
 		}
 	}
 
@@ -456,16 +460,16 @@ a {
 	.txt{
 		position: absolute;
 		font-family: eveleth;
-		top: 88vw;
 		font-size: 6vw;
 		color: #fafa17;
+		top: 181vw;
 		left: 18vw;
 		transform: rotate(-1.5deg);
 		background-position:-13vw 1.7vw;
 
 		&:nth-child(2){
-			top: 181vw;
-			left: 18vw;
+		top: 88vw;
+		left: 18vw;
 		}
 	}
 
@@ -568,16 +572,16 @@ a {
 	.txt{
 		position: absolute;
 		font-family: eveleth;
-		top: 95vw;
 		font-size: 6vw;
 		color: #fafa17;
+		top: 192vw;
 		left: 18vw;
 		transform: rotate(-1.5deg);
 		background-position:-13vw 1.7vw;
 
 		&:nth-child(2){
-			top: 192vw;
-			left: 18vw;
+		top: 95vw;
+		left: 18vw;
 		}
 	}
 
@@ -599,16 +603,16 @@ a {
 	.txt{
 		position: absolute;
 		font-family: eveleth;
-		top: 95vw;
 		font-size: 6vw;
 		color: #fafa17;
+		top: 192vw;
 		left: 18vw;
 		transform: rotate(-1.5deg);
 		background-position:-13vw 1.7vw;
 
 		&:nth-child(2){
-			top: 192vw;
-			left: 18vw;
+		top: 95vw;
+		left: 18vw;
 		}
 	}
 
@@ -628,16 +632,16 @@ a {
 	.txt{
 		position: absolute;
 		font-family: eveleth;
-		top: 102vw;
 		font-size: 6vw;
 		color: #fafa17;
-		left: 17vw;
+		top: 205vw;
+		left: 16vw;
 		transform: rotate(-1.5deg);
 		background-position:-13vw 1.7vw;
 
 		&:nth-child(2){
-			top: 205vw;
-			left: 16vw;
+		top: 102vw;
+		left: 17vw;
 		}
 	}
 

@@ -114,7 +114,7 @@
 
 			<aside class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 
-				<canvas width="151" height="85" id="cnvs" style="background-image: url(uploads/<?php echo $mostRecent['file_name'] ?>)">
+				<canvas width="151" height="85" id="cnvs">
 					<p>No canvas support</p>
 				</canvas>
 
@@ -227,6 +227,7 @@
 				<ul class="row frst">
 					<?php foreach ($images as $image){ ?>
 
+
 					<?php $class++; ?>
 						<li class="c-<?php echo $class ?>" id="image-1123">
 
@@ -265,11 +266,7 @@
 					<ul class="row ">
 						<?php foreach ($images as $image){ ?>
 						<?php $otherclass++; ?>
-							<li class="move k-<?php echo $otherclass ?>" id="image-1123" data="<?php echo $image['created'] ?>" >
-
-								<!-- <picture class="">
-									<img src="uploads/test.jpg" alt="divider" class="new move scale col-xs-10 col-xs-offset-1 col-sm-5 col-md-6 col-lg-3 col-sm-offset-0  col-md-offset-0  col-lg-offset-0 ">
-								</picture> -->
+							<li class="move k-<?php echo $otherclass ?>" id="image-1123" data="<?php echo explode(" ", $image['created'])[0] ?>" >
 
 								<picture>
 									<source
@@ -321,9 +318,7 @@
 				<div class="actv">
 				<video data-poster="assets/video/poster.jpg" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2">
 				  <source data-src="assets/video/main.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' class="vidme">
-				  <!-- <source data-src="/assets/video/main.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
 				</video>
-					<!-- <video controls src="assets/video/main.mp4" class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-xs-offset-1 col-sm-offset-2"></video> -->
 				</div>
 			</div>
 		</article>
